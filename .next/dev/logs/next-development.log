@@ -1,223 +1,29 @@
-[00:00:01.386] Server  LOG     ✓ Ready in 1014ms
-[00:00:02.252] Server  WARN    Image with src "https://lh3.googleusercontent.com/aida-public/AB6AXuAH3dEsKnqln7DInT9ZShqx2804EQxBe__dygG-b6sDhkxiHhmn6Hhu5zDc3A6RDDcPw1MihNUK0hJI_-63e8oDJkjEpxQlZPwdPlcRSW2nYR-tiYFth702w4M9rTVwkm-PlnygYnXq1FF_7tVPCweTueGMVqkQCN4jnvXR6Y1aLw2IhBsngsBnP07w-iipW-rexzg7yV60UMJknYTAGEfuSXofkyxl-DDZ-Fi_pE1MsA3OPG806M05s9DJnLq6v1sNWcogX6P9xaU" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:02.284] Server  WARN    Image with src "https://lh3.googleusercontent.com/aida-public/AB6AXuCu_d4LXAbmJzXvVDXBAzEW1XxDyc2Sz8ZSZGp_7fuaOirdgHeoszGq0uoR0CjrzQG3e4NlYYQvd-sck2-IwPAZ_kPJPeJdyCchBbgHskl-0fsT78LPAfoEYx8LDqYeQsi3pSpyEcZdrtOKT_15Hkp0u5SGU_0nXa4rFDRv-HmJnhI4s1yK_K36b6WLkpPWQLVfXsQwb2Oj0yN3_qVAGB7av-q9v40y2gc_bUWXg2zCZGomtJcGrfbSJWL0_Qplnxj21OQnT4gSe1w" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:02.285] Server  WARN    Image with src "https://lh3.googleusercontent.com/aida-public/AB6AXuBM4QvTsTB7p-8VbFSwkVc6w9jr5EeRN6NFp48DcU9fBsnXzKIG3GTXW6ptoZziDhYkq_KxL3PecYOiva8j_w1b7hLwNdpVH02JDsTQrwgpX7CGnaYDXzPpsucnPVBFqRAzw3ugUysL3V9eefisWLZ6MJBlQD1GqIl7HPcZAuaiaOxiyn1mYoPTRrhF20wxVIPEKu_2AbOzFctfg5LcuSVyLNtlvPM9dFHK4vxyciIKnvbECnbGWE-fmxkp0g1Fzs509rXrBrH8bAI" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:02.286] Server  WARN    Image with src "https://lh3.googleusercontent.com/aida-public/AB6AXuAHchWAOKk2AoM1h-bPL8ceUK7j3K-Z7Q2vfhnV8MdmZlo0GWni_Zn_Nkk7R22PBNSJWbCMXmBZby03rBKfbgPTTA-ZGYeR5YyGsx-SPvDtU_ggD6U-H03DNB94stW8r1YSy02DhZIBBP32V43xUdRubSMXU6cPLkDL-m5MBa0gsZxrOZKk_EEaaPW5E50F7Ui0jon1vyxkeUL50teOmLRO6UGMQO9zk4En0LDUsHwibhmXR2wcDQ8Lx0rCaRrsbdL7hbjZysJ2giE" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:02.371] Server  WARN    Image with src "https://lh3.googleusercontent.com/aida-public/AB6AXuCr9fkodzN5qrT2W8g7rfyKMvWzfyXoRiRMDpQ9LCgA_Ij2hxQcWWJB_2w5LYL8k_5vnVXk5Qos94IS-O1GgOwz4d6Xqa8U7CpTGbOBa3Cm6qblzPgmDBSo7_CdGt8Xizes4ptLGSjXIOoIaO9meD9GeTr5wLeNsQcSy7gp195rGUxGZ4lT0zCWkE7lD5yfsUmRSPeG2tboWUwNPeoUxJPUbuJrsJDj8kg1DN0Lf00AU0lOOfQi1xj6QJ-7kLDHWNfQD9ghF0YrUvg" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:04.457] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:04.802] Browser WARN    Image with src "https://lh3.googleusercontent.com/aida-public/AB6AXuAH3dEsKnqln7DInT9ZShqx2804EQxBe__dygG-b6sDhkxiHhmn6Hhu5zDc3A6RDDcPw1MihNUK0hJI_-63e8oDJkjEpxQlZPwdPlcRSW2nYR-tiYFth702w4M9rTVwkm-PlnygYnXq1FF_7tVPCweTueGMVqkQCN4jnvXR6Y1aLw2IhBsngsBnP07w-iipW-rexzg7yV60UMJknYTAGEfuSXofkyxl-DDZ-Fi_pE1MsA3OPG806M05s9DJnLq6v1sNWcogX6P9xaU" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:04.802] Browser WARN    Image with src "https://lh3.googleusercontent.com/aida-public/AB6AXuCu_d4LXAbmJzXvVDXBAzEW1XxDyc2Sz8ZSZGp_7fuaOirdgHeoszGq0uoR0CjrzQG3e4NlYYQvd-sck2-IwPAZ_kPJPeJdyCchBbgHskl-0fsT78LPAfoEYx8LDqYeQsi3pSpyEcZdrtOKT_15Hkp0u5SGU_0nXa4rFDRv-HmJnhI4s1yK_K36b6WLkpPWQLVfXsQwb2Oj0yN3_qVAGB7av-q9v40y2gc_bUWXg2zCZGomtJcGrfbSJWL0_Qplnxj21OQnT4gSe1w" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:04.802] Browser WARN    Image with src "https://lh3.googleusercontent.com/aida-public/AB6AXuBM4QvTsTB7p-8VbFSwkVc6w9jr5EeRN6NFp48DcU9fBsnXzKIG3GTXW6ptoZziDhYkq_KxL3PecYOiva8j_w1b7hLwNdpVH02JDsTQrwgpX7CGnaYDXzPpsucnPVBFqRAzw3ugUysL3V9eefisWLZ6MJBlQD1GqIl7HPcZAuaiaOxiyn1mYoPTRrhF20wxVIPEKu_2AbOzFctfg5LcuSVyLNtlvPM9dFHK4vxyciIKnvbECnbGWE-fmxkp0g1Fzs509rXrBrH8bAI" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:04.802] Browser WARN    Image with src "https://lh3.googleusercontent.com/aida-public/AB6AXuAHchWAOKk2AoM1h-bPL8ceUK7j3K-Z7Q2vfhnV8MdmZlo0GWni_Zn_Nkk7R22PBNSJWbCMXmBZby03rBKfbgPTTA-ZGYeR5YyGsx-SPvDtU_ggD6U-H03DNB94stW8r1YSy02DhZIBBP32V43xUdRubSMXU6cPLkDL-m5MBa0gsZxrOZKk_EEaaPW5E50F7Ui0jon1vyxkeUL50teOmLRO6UGMQO9zk4En0LDUsHwibhmXR2wcDQ8Lx0rCaRrsbdL7hbjZysJ2giE" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:04.802] Browser WARN    Image with src "https://lh3.googleusercontent.com/aida-public/AB6AXuCr9fkodzN5qrT2W8g7rfyKMvWzfyXoRiRMDpQ9LCgA_Ij2hxQcWWJB_2w5LYL8k_5vnVXk5Qos94IS-O1GgOwz4d6Xqa8U7CpTGbOBa3Cm6qblzPgmDBSo7_CdGt8Xizes4ptLGSjXIOoIaO9meD9GeTr5wLeNsQcSy7gp195rGUxGZ4lT0zCWkE7lD5yfsUmRSPeG2tboWUwNPeoUxJPUbuJrsJDj8kg1DN0Lf00AU0lOOfQi1xj6QJ-7kLDHWNfQD9ghF0YrUvg" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:04:06.399] Server  LOG     ✓ Compiled in 236ms
-[00:04:11.285] Server  LOG     ✓ Compiled in 53ms
-[00:08:01.461] Server  LOG     ✓ Compiled in 115ms
-[00:08:18.501] Server  LOG     ✓ Compiled in 147ms
-[00:08:19.249] Browser ERROR   ./src/app/globals.css:825:8
-Parsing CSS source code failed
-  823 |   }
-  824 | }
-> 825 | @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
-      |        ^
-  826 | :root {
-  827 |   --background: #ffffff;
-  828 |   --foreground: #171717;
-
-@import rules must precede all rules aside from @charset and @layer statements
-
-Import trace:
-  Client Component Browser:
-    ./src/app/globals.css [Client Component Browser]
-    ./src/app/layout.tsx [Server Component]
-[00:08:26.778] Server  ERROR   ⨯ ./src/app/globals.css:825:8
-Parsing CSS source code failed
-  823 |   }
-  824 | }
-> 825 | @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
-      |        ^
-  826 | :root {
-  827 |   --background: #ffffff;
-  828 |   --foreground: #171717;
-
-@import rules must precede all rules aside from @charset and @layer statements
-
-Import trace:
-  Client Component Browser:
-    ./src/app/globals.css [Client Component Browser]
-    ./src/app/layout.tsx [Server Component]
-
-
-[00:08:26.912] Browser ERROR   ./src/app/globals.css:825:8
-Parsing CSS source code failed
-  823 |   }
-  824 | }
-> 825 | @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
-      |        ^
-  826 | :root {
-  827 |   --background: #ffffff;
-  828 |   --foreground: #171717;
-
-@import rules must precede all rules aside from @charset and @layer statements
-
-Import trace:
-  Client Component Browser:
-    ./src/app/globals.css [Client Component Browser]
-    ./src/app/layout.tsx [Server Component]
-[00:08:27.836] Browser ERROR   ./src/app/globals.css:825:8
-Parsing CSS source code failed
-  823 |   }
-  824 | }
-> 825 | @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
-      |        ^
-  826 | :root {
-  827 |   --background: #ffffff;
-  828 |   --foreground: #171717;
-
-@import rules must precede all rules aside from @charset and @layer statements
-
-Import trace:
-  Client Component Browser:
-    ./src/app/globals.css [Client Component Browser]
-    ./src/app/layout.tsx [Server Component]
-[00:08:27.836] Browser ERROR   ./src/app/globals.css:825:8
-Parsing CSS source code failed
-  823 |   }
-  824 | }
-> 825 | @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
-      |        ^
-  826 | :root {
-  827 |   --background: #ffffff;
-  828 |   --foreground: #171717;
-
-@import rules must precede all rules aside from @charset and @layer statements
-
-Import trace:
-  Client Component Browser:
-    ./src/app/globals.css [Client Component Browser]
-    ./src/app/layout.tsx [Server Component]
-[00:08:28.307] Browser ERROR   uncaughtError: Error: ./src/app/globals.css:825:8
-Parsing CSS source code failed
-  823 |   }
-  824 | }
-> 825 | @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
-      |        ^
-  826 | :root {
-  827 |   --background: #ffffff;
-  828 |   --foreground: #171717;
-
-@import rules must precede all rules aside from @charset and @layer statements
-
-Import trace:
-  Client Component Browser:
-    ./src/app/globals.css [Client Component Browser]
-    ./src/app/layout.tsx [Server Component]
-
-
-[00:08:28.507] Browser ERROR   ./src/app/globals.css:825:8
-Parsing CSS source code failed
-  823 |   }
-  824 | }
-> 825 | @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
-      |        ^
-  826 | :root {
-  827 |   --background: #ffffff;
-  828 |   --foreground: #171717;
-
-@import rules must precede all rules aside from @charset and @layer statements
-
-Import trace:
-  Client Component Browser:
-    ./src/app/globals.css [Client Component Browser]
-    ./src/app/layout.tsx [Server Component]
-[00:08:28.507] Browser ERROR   ./src/app/globals.css:825:8
-Parsing CSS source code failed
-  823 |   }
-  824 | }
-> 825 | @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
-      |        ^
-  826 | :root {
-  827 |   --background: #ffffff;
-  828 |   --foreground: #171717;
-
-@import rules must precede all rules aside from @charset and @layer statements
-
-Import trace:
-  Client Component Browser:
-    ./src/app/globals.css [Client Component Browser]
-    ./src/app/layout.tsx [Server Component]
-[00:08:28.507] Browser ERROR   ./src/app/globals.css:825:8
-Parsing CSS source code failed
-  823 |   }
-  824 | }
-> 825 | @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
-      |        ^
-  826 | :root {
-  827 |   --background: #ffffff;
-  828 |   --foreground: #171717;
-
-@import rules must precede all rules aside from @charset and @layer statements
-
-Import trace:
-  Client Component Browser:
-    ./src/app/globals.css [Client Component Browser]
-    ./src/app/layout.tsx [Server Component]
-[00:08:46.098] Server  LOG     ✓ Compiled in 40ms
-[00:08:46.219] Server  WARN    Image with src "https://lh3.googleusercontent.com/aida-public/AB6AXuAH3dEsKnqln7DInT9ZShqx2804EQxBe__dygG-b6sDhkxiHhmn6Hhu5zDc3A6RDDcPw1MihNUK0hJI_-63e8oDJkjEpxQlZPwdPlcRSW2nYR-tiYFth702w4M9rTVwkm-PlnygYnXq1FF_7tVPCweTueGMVqkQCN4jnvXR6Y1aLw2IhBsngsBnP07w-iipW-rexzg7yV60UMJknYTAGEfuSXofkyxl-DDZ-Fi_pE1MsA3OPG806M05s9DJnLq6v1sNWcogX6P9xaU" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:08:46.247] Server  WARN    Image with src "https://lh3.googleusercontent.com/aida-public/AB6AXuCu_d4LXAbmJzXvVDXBAzEW1XxDyc2Sz8ZSZGp_7fuaOirdgHeoszGq0uoR0CjrzQG3e4NlYYQvd-sck2-IwPAZ_kPJPeJdyCchBbgHskl-0fsT78LPAfoEYx8LDqYeQsi3pSpyEcZdrtOKT_15Hkp0u5SGU_0nXa4rFDRv-HmJnhI4s1yK_K36b6WLkpPWQLVfXsQwb2Oj0yN3_qVAGB7av-q9v40y2gc_bUWXg2zCZGomtJcGrfbSJWL0_Qplnxj21OQnT4gSe1w" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:08:46.249] Server  WARN    Image with src "https://lh3.googleusercontent.com/aida-public/AB6AXuBM4QvTsTB7p-8VbFSwkVc6w9jr5EeRN6NFp48DcU9fBsnXzKIG3GTXW6ptoZziDhYkq_KxL3PecYOiva8j_w1b7hLwNdpVH02JDsTQrwgpX7CGnaYDXzPpsucnPVBFqRAzw3ugUysL3V9eefisWLZ6MJBlQD1GqIl7HPcZAuaiaOxiyn1mYoPTRrhF20wxVIPEKu_2AbOzFctfg5LcuSVyLNtlvPM9dFHK4vxyciIKnvbECnbGWE-fmxkp0g1Fzs509rXrBrH8bAI" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:08:46.249] Server  WARN    Image with src "https://lh3.googleusercontent.com/aida-public/AB6AXuAHchWAOKk2AoM1h-bPL8ceUK7j3K-Z7Q2vfhnV8MdmZlo0GWni_Zn_Nkk7R22PBNSJWbCMXmBZby03rBKfbgPTTA-ZGYeR5YyGsx-SPvDtU_ggD6U-H03DNB94stW8r1YSy02DhZIBBP32V43xUdRubSMXU6cPLkDL-m5MBa0gsZxrOZKk_EEaaPW5E50F7Ui0jon1vyxkeUL50teOmLRO6UGMQO9zk4En0LDUsHwibhmXR2wcDQ8Lx0rCaRrsbdL7hbjZysJ2giE" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:08:46.332] Server  WARN    Image with src "https://lh3.googleusercontent.com/aida-public/AB6AXuCr9fkodzN5qrT2W8g7rfyKMvWzfyXoRiRMDpQ9LCgA_Ij2hxQcWWJB_2w5LYL8k_5vnVXk5Qos94IS-O1GgOwz4d6Xqa8U7CpTGbOBa3Cm6qblzPgmDBSo7_CdGt8Xizes4ptLGSjXIOoIaO9meD9GeTr5wLeNsQcSy7gp195rGUxGZ4lT0zCWkE7lD5yfsUmRSPeG2tboWUwNPeoUxJPUbuJrsJDj8kg1DN0Lf00AU0lOOfQi1xj6QJ-7kLDHWNfQD9ghF0YrUvg" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:08:46.674] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:08:46.894] Browser WARN    Image with src "https://lh3.googleusercontent.com/aida-public/AB6AXuAH3dEsKnqln7DInT9ZShqx2804EQxBe__dygG-b6sDhkxiHhmn6Hhu5zDc3A6RDDcPw1MihNUK0hJI_-63e8oDJkjEpxQlZPwdPlcRSW2nYR-tiYFth702w4M9rTVwkm-PlnygYnXq1FF_7tVPCweTueGMVqkQCN4jnvXR6Y1aLw2IhBsngsBnP07w-iipW-rexzg7yV60UMJknYTAGEfuSXofkyxl-DDZ-Fi_pE1MsA3OPG806M05s9DJnLq6v1sNWcogX6P9xaU" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:08:46.894] Browser WARN    Image with src "https://lh3.googleusercontent.com/aida-public/AB6AXuCu_d4LXAbmJzXvVDXBAzEW1XxDyc2Sz8ZSZGp_7fuaOirdgHeoszGq0uoR0CjrzQG3e4NlYYQvd-sck2-IwPAZ_kPJPeJdyCchBbgHskl-0fsT78LPAfoEYx8LDqYeQsi3pSpyEcZdrtOKT_15Hkp0u5SGU_0nXa4rFDRv-HmJnhI4s1yK_K36b6WLkpPWQLVfXsQwb2Oj0yN3_qVAGB7av-q9v40y2gc_bUWXg2zCZGomtJcGrfbSJWL0_Qplnxj21OQnT4gSe1w" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:08:46.894] Browser WARN    Image with src "https://lh3.googleusercontent.com/aida-public/AB6AXuBM4QvTsTB7p-8VbFSwkVc6w9jr5EeRN6NFp48DcU9fBsnXzKIG3GTXW6ptoZziDhYkq_KxL3PecYOiva8j_w1b7hLwNdpVH02JDsTQrwgpX7CGnaYDXzPpsucnPVBFqRAzw3ugUysL3V9eefisWLZ6MJBlQD1GqIl7HPcZAuaiaOxiyn1mYoPTRrhF20wxVIPEKu_2AbOzFctfg5LcuSVyLNtlvPM9dFHK4vxyciIKnvbECnbGWE-fmxkp0g1Fzs509rXrBrH8bAI" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:08:46.894] Browser WARN    Image with src "https://lh3.googleusercontent.com/aida-public/AB6AXuAHchWAOKk2AoM1h-bPL8ceUK7j3K-Z7Q2vfhnV8MdmZlo0GWni_Zn_Nkk7R22PBNSJWbCMXmBZby03rBKfbgPTTA-ZGYeR5YyGsx-SPvDtU_ggD6U-H03DNB94stW8r1YSy02DhZIBBP32V43xUdRubSMXU6cPLkDL-m5MBa0gsZxrOZKk_EEaaPW5E50F7Ui0jon1vyxkeUL50teOmLRO6UGMQO9zk4En0LDUsHwibhmXR2wcDQ8Lx0rCaRrsbdL7hbjZysJ2giE" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:08:46.894] Browser WARN    Image with src "https://lh3.googleusercontent.com/aida-public/AB6AXuCr9fkodzN5qrT2W8g7rfyKMvWzfyXoRiRMDpQ9LCgA_Ij2hxQcWWJB_2w5LYL8k_5vnVXk5Qos94IS-O1GgOwz4d6Xqa8U7CpTGbOBa3Cm6qblzPgmDBSo7_CdGt8Xizes4ptLGSjXIOoIaO9meD9GeTr5wLeNsQcSy7gp195rGUxGZ4lT0zCWkE7lD5yfsUmRSPeG2tboWUwNPeoUxJPUbuJrsJDj8kg1DN0Lf00AU0lOOfQi1xj6QJ-7kLDHWNfQD9ghF0YrUvg" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:11:39.502] Server  LOG     ✓ Compiled in 180ms
-[00:11:39.721] Server  ERROR   ⨯ ReferenceError: MdWork is not defined
-[00:11:40.249] Browser ERROR   uncaughtError: ReferenceError: MdWork is not defined
-[00:11:42.856] Server  LOG     ✓ Compiled in 705ms
-[00:11:43.461] Server  WARN    Image with src "https://lh3.googleusercontent.com/aida-public/AB6AXuAH3dEsKnqln7DInT9ZShqx2804EQxBe__dygG-b6sDhkxiHhmn6Hhu5zDc3A6RDDcPw1MihNUK0hJI_-63e8oDJkjEpxQlZPwdPlcRSW2nYR-tiYFth702w4M9rTVwkm-PlnygYnXq1FF_7tVPCweTueGMVqkQCN4jnvXR6Y1aLw2IhBsngsBnP07w-iipW-rexzg7yV60UMJknYTAGEfuSXofkyxl-DDZ-Fi_pE1MsA3OPG806M05s9DJnLq6v1sNWcogX6P9xaU" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:11:43.496] Server  WARN    Image with src "https://lh3.googleusercontent.com/aida-public/AB6AXuCu_d4LXAbmJzXvVDXBAzEW1XxDyc2Sz8ZSZGp_7fuaOirdgHeoszGq0uoR0CjrzQG3e4NlYYQvd-sck2-IwPAZ_kPJPeJdyCchBbgHskl-0fsT78LPAfoEYx8LDqYeQsi3pSpyEcZdrtOKT_15Hkp0u5SGU_0nXa4rFDRv-HmJnhI4s1yK_K36b6WLkpPWQLVfXsQwb2Oj0yN3_qVAGB7av-q9v40y2gc_bUWXg2zCZGomtJcGrfbSJWL0_Qplnxj21OQnT4gSe1w" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:11:43.497] Server  WARN    Image with src "https://lh3.googleusercontent.com/aida-public/AB6AXuBM4QvTsTB7p-8VbFSwkVc6w9jr5EeRN6NFp48DcU9fBsnXzKIG3GTXW6ptoZziDhYkq_KxL3PecYOiva8j_w1b7hLwNdpVH02JDsTQrwgpX7CGnaYDXzPpsucnPVBFqRAzw3ugUysL3V9eefisWLZ6MJBlQD1GqIl7HPcZAuaiaOxiyn1mYoPTRrhF20wxVIPEKu_2AbOzFctfg5LcuSVyLNtlvPM9dFHK4vxyciIKnvbECnbGWE-fmxkp0g1Fzs509rXrBrH8bAI" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:11:43.498] Server  WARN    Image with src "https://lh3.googleusercontent.com/aida-public/AB6AXuAHchWAOKk2AoM1h-bPL8ceUK7j3K-Z7Q2vfhnV8MdmZlo0GWni_Zn_Nkk7R22PBNSJWbCMXmBZby03rBKfbgPTTA-ZGYeR5YyGsx-SPvDtU_ggD6U-H03DNB94stW8r1YSy02DhZIBBP32V43xUdRubSMXU6cPLkDL-m5MBa0gsZxrOZKk_EEaaPW5E50F7Ui0jon1vyxkeUL50teOmLRO6UGMQO9zk4En0LDUsHwibhmXR2wcDQ8Lx0rCaRrsbdL7hbjZysJ2giE" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:11:43.635] Server  WARN    Image with src "https://lh3.googleusercontent.com/aida-public/AB6AXuCr9fkodzN5qrT2W8g7rfyKMvWzfyXoRiRMDpQ9LCgA_Ij2hxQcWWJB_2w5LYL8k_5vnVXk5Qos94IS-O1GgOwz4d6Xqa8U7CpTGbOBa3Cm6qblzPgmDBSo7_CdGt8Xizes4ptLGSjXIOoIaO9meD9GeTr5wLeNsQcSy7gp195rGUxGZ4lT0zCWkE7lD5yfsUmRSPeG2tboWUwNPeoUxJPUbuJrsJDj8kg1DN0Lf00AU0lOOfQi1xj6QJ-7kLDHWNfQD9ghF0YrUvg" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:11:43.918] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:11:44.147] Browser WARN    Image with src "https://lh3.googleusercontent.com/aida-public/AB6AXuAH3dEsKnqln7DInT9ZShqx2804EQxBe__dygG-b6sDhkxiHhmn6Hhu5zDc3A6RDDcPw1MihNUK0hJI_-63e8oDJkjEpxQlZPwdPlcRSW2nYR-tiYFth702w4M9rTVwkm-PlnygYnXq1FF_7tVPCweTueGMVqkQCN4jnvXR6Y1aLw2IhBsngsBnP07w-iipW-rexzg7yV60UMJknYTAGEfuSXofkyxl-DDZ-Fi_pE1MsA3OPG806M05s9DJnLq6v1sNWcogX6P9xaU" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:11:44.148] Browser WARN    Image with src "https://lh3.googleusercontent.com/aida-public/AB6AXuCu_d4LXAbmJzXvVDXBAzEW1XxDyc2Sz8ZSZGp_7fuaOirdgHeoszGq0uoR0CjrzQG3e4NlYYQvd-sck2-IwPAZ_kPJPeJdyCchBbgHskl-0fsT78LPAfoEYx8LDqYeQsi3pSpyEcZdrtOKT_15Hkp0u5SGU_0nXa4rFDRv-HmJnhI4s1yK_K36b6WLkpPWQLVfXsQwb2Oj0yN3_qVAGB7av-q9v40y2gc_bUWXg2zCZGomtJcGrfbSJWL0_Qplnxj21OQnT4gSe1w" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:11:44.148] Browser WARN    Image with src "https://lh3.googleusercontent.com/aida-public/AB6AXuBM4QvTsTB7p-8VbFSwkVc6w9jr5EeRN6NFp48DcU9fBsnXzKIG3GTXW6ptoZziDhYkq_KxL3PecYOiva8j_w1b7hLwNdpVH02JDsTQrwgpX7CGnaYDXzPpsucnPVBFqRAzw3ugUysL3V9eefisWLZ6MJBlQD1GqIl7HPcZAuaiaOxiyn1mYoPTRrhF20wxVIPEKu_2AbOzFctfg5LcuSVyLNtlvPM9dFHK4vxyciIKnvbECnbGWE-fmxkp0g1Fzs509rXrBrH8bAI" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:11:44.148] Browser WARN    Image with src "https://lh3.googleusercontent.com/aida-public/AB6AXuAHchWAOKk2AoM1h-bPL8ceUK7j3K-Z7Q2vfhnV8MdmZlo0GWni_Zn_Nkk7R22PBNSJWbCMXmBZby03rBKfbgPTTA-ZGYeR5YyGsx-SPvDtU_ggD6U-H03DNB94stW8r1YSy02DhZIBBP32V43xUdRubSMXU6cPLkDL-m5MBa0gsZxrOZKk_EEaaPW5E50F7Ui0jon1vyxkeUL50teOmLRO6UGMQO9zk4En0LDUsHwibhmXR2wcDQ8Lx0rCaRrsbdL7hbjZysJ2giE" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:11:44.148] Browser WARN    Image with src "https://lh3.googleusercontent.com/aida-public/AB6AXuCr9fkodzN5qrT2W8g7rfyKMvWzfyXoRiRMDpQ9LCgA_Ij2hxQcWWJB_2w5LYL8k_5vnVXk5Qos94IS-O1GgOwz4d6Xqa8U7CpTGbOBa3Cm6qblzPgmDBSo7_CdGt8Xizes4ptLGSjXIOoIaO9meD9GeTr5wLeNsQcSy7gp195rGUxGZ4lT0zCWkE7lD5yfsUmRSPeG2tboWUwNPeoUxJPUbuJrsJDj8kg1DN0Lf00AU0lOOfQi1xj6QJ-7kLDHWNfQD9ghF0YrUvg" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:30:50.494] Server  LOG     ✓ Compiled in 598ms
-[00:34:33.285] Server  LOG     ✓ Compiled in 268ms
+[00:00:01.250] Server  LOG     ✓ Ready in 974ms
+[00:00:03.051] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:03.606] Server  ERROR   ⨯ "upstream image response failed for" "https://images.unsplash.com/photo-1494790108755-2616b612b47c?w=200&q=80" 404
+[00:00:04.064] Browser WARN    Image with src "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&q=85" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:04.064] Browser WARN    Image with src "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&q=85" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:04.064] Browser WARN    Image with src "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=700&q=80" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:04.064] Browser WARN    Image with src "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=700&q=80" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:00:04.064] Browser WARN    Image with src "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=700&q=80" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:04.064] Browser WARN    Image with src "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=700&q=80" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:00:04.064] Browser WARN    Image with src "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=700&q=80" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:04.064] Browser WARN    Image with src "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=700&q=80" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:00:04.064] Browser WARN    Image with src "https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&q=80" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:04.064] Browser WARN    Image with src "https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&q=80" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:00:04.064] Browser WARN    Image with src "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&q=80" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:04.064] Browser WARN    Image with src "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=80" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:07.214] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:07.561] Browser WARN    Image with src "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&q=85" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:07.561] Browser WARN    Image with src "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&q=85" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:08.537] Browser WARN    Image with src "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=700&q=80" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:08.537] Browser WARN    Image with src "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=700&q=80" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:00:08.537] Browser WARN    Image with src "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=700&q=80" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:08.537] Browser WARN    Image with src "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=700&q=80" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:00:14.673] Browser WARN    Image with src "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=700&q=80" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:14.673] Browser WARN    Image with src "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=700&q=80" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:00:14.818] Browser WARN    Image with src "https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&q=80" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:14.818] Browser WARN    Image with src "https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&q=80" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:00:30.283] Server  ERROR   ⨯ "upstream image response failed for" "https://images.unsplash.com/photo-1494790108755-2616b612b47c?w=200&q=80" 404
+[00:00:30.385] Browser WARN    Image with src "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&q=80" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:30.386] Browser WARN    Image with src "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=80" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
