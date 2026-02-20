@@ -14,7 +14,10 @@ import {
   MdLocationOn,
   MdPublic,
 } from "react-icons/md";
+import { motion, AnimatePresence } from "framer-motion";
+import ScrollToLink from "@/components/ScrollToLink";
 
+/* ─── Custom Cursor ─────────────────────────────────────── */
 function CustomCursor() {
   const dot = useRef<HTMLDivElement>(null);
   const ring = useRef<HTMLDivElement>(null);
@@ -50,19 +53,17 @@ function CustomCursor() {
     <>
       <div
         ref={dot}
-        className="fixed z-9999 w-2.5 h-2.5 rounded-full pointer-events-none -translate-x-1/2 -translate-y-1/2 mix-blend-multiply"
-        style={{ background: "var(--gold)" }}
+        className="fixed z-[9999] w-2.5 h-2.5 rounded-full pointer-events-none -translate-x-1/2 -translate-y-1/2 mix-blend-multiply bg-gold"
       />
       <div
         ref={ring}
-        className="fixed z-9998 w-10 h-10 rounded-full pointer-events-none -translate-x-1/2 -translate-y-1/2"
-        style={{ border: "1px solid var(--gold)", opacity: 0.45 }}
+        className="fixed z-[9998] w-10 h-10 rounded-full pointer-events-none -translate-x-1/2 -translate-y-1/2 border border-gold opacity-45"
       />
     </>
   );
 }
 
-/* ─── Animated section wrapper ─────────────────────────── */
+/* ─── FadeSection ───────────────────────────────────────── */
 function FadeSection({
   children,
   className = "",
@@ -72,43 +73,23 @@ function FadeSection({
   className?: string;
   delay?: number;
 }) {
-  const ref = useRef<HTMLDivElement>(null);
-  const [visible, setVisible] = useState(false);
-
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    const obs = new IntersectionObserver(
-      ([e]) => {
-        if (e.isIntersecting) {
-          setVisible(true);
-          obs.disconnect();
-        }
-      },
-      { threshold: 0.15 },
-    );
-    obs.observe(el);
-    return () => obs.disconnect();
-  }, []);
-
   return (
-    <div
-      ref={ref}
+    <motion.div
       className={className}
-      style={{
-        opacity: visible ? 1 : 0,
-        transform: visible ? "translateY(0)" : "translateY(28px)",
-        transition: `opacity 0.8s ease ${delay}ms, transform 0.8s ease ${delay}ms`,
-      }}
+      initial={{ opacity: 0, y: 28 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.15 }}
+      transition={{ duration: 0.8, ease: "easeOut", delay: delay / 1000 }}
     >
       {children}
-    </div>
+    </motion.div>
   );
 }
 
 /* ─── Nav ───────────────────────────────────────────────── */
 function Nav() {
   const [scrolled, setScrolled] = useState(false);
+
   useEffect(() => {
     const fn = () => setScrolled(window.scrollY > 50);
     window.addEventListener("scroll", fn);
@@ -117,165 +98,105 @@ function Nav() {
 
   return (
     <nav
-      className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-16 transition-all duration-500"
-      style={{
-        paddingTop: scrolled ? 16 : 28,
-        paddingBottom: scrolled ? 16 : 28,
-        background: scrolled ? "rgba(250,248,244,0.94)" : "transparent",
-        backdropFilter: scrolled ? "blur(14px)" : "none",
-        borderBottom: scrolled ? "1px solid rgba(201,169,110,0.2)" : "none",
-      }}
+      className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-16 transition-all duration-500 ${
+        scrolled
+          ? "py-4 bg-[#faf8f4]/95 backdrop-blur-xl border-b border-[#c9a96e]/20"
+          : "py-7 bg-transparent"
+      }`}
     >
       <a
         href="#"
-        className="font-display text-2xl font-light tracking-widest"
-        style={{ color: "var(--ink)" }}
+        className="font-display text-2xl font-light tracking-widest text-[#1a1612]"
       >
-        Design<span style={{ color: "var(--gold)" }}>Space</span>
+        Design<span className="text-[#c9a96e]">Space</span>
       </a>
 
       <ul className="flex gap-10 list-none">
         {["Work", "Services", "Process", "Journal"].map((l) => (
           <li key={l}>
-            <a
-              href={`#${l.toLowerCase()}`}
-              className="font-body text-xs tracking-[0.22em] uppercase transition-all duration-300"
-              style={{ color: "var(--stone)", opacity: 0.8 }}
-              onMouseEnter={(e) => {
-                (e.target as HTMLElement).style.opacity = "1";
-                (e.target as HTMLElement).style.color = "var(--gold)";
-              }}
-              onMouseLeave={(e) => {
-                (e.target as HTMLElement).style.opacity = "0.8";
-                (e.target as HTMLElement).style.color = "var(--stone)";
-              }}
+            <ScrollToLink
+              to={`#${l.toLowerCase()}`}
+              className="font-body text-xs tracking-[0.22em] uppercase text-[#8a7f72]/80 hover:text-[#c9a96e] hover:opacity-100 transition-all duration-300"
             >
               {l}
-            </a>
+            </ScrollToLink>
           </li>
         ))}
       </ul>
 
-      <a
-        href="#contact"
-        className="font-body text-xs tracking-[0.2em] uppercase px-6 py-3 transition-all duration-300"
-        style={{
-          border: "1px solid var(--gold)",
-          color: "var(--ink)",
-        }}
-        onMouseEnter={(e) => {
-          (e.target as HTMLElement).style.background = "var(--gold)";
-          (e.target as HTMLElement).style.color = "var(--warm-white)";
-        }}
-        onMouseLeave={(e) => {
-          (e.target as HTMLElement).style.background = "transparent";
-          (e.target as HTMLElement).style.color = "var(--ink)";
-        }}
+      <ScrollToLink
+        to="#contact"
+        className="font-body text-xs tracking-[0.2em] uppercase px-6 py-3 border border-[#c9a96e] text-[#1a1612] hover:bg-[#c9a96e] hover:text-[#faf8f4] transition-all duration-300"
       >
         Book Consult
-      </a>
+      </ScrollToLink>
     </nav>
   );
 }
 
 /* ─── Hero ──────────────────────────────────────────────── */
 function Hero() {
+  const fadeUp = (delay: number) => ({
+    initial: { opacity: 0, y: 30 },
+    animate: { opacity: 1, y: 0 },
+    transition: {
+      duration: 0.8,
+      ease: [0.4, 0, 0.2, 1] as [number, number, number, number],
+      delay,
+    },
+  });
+
   return (
     <section className="min-h-screen grid grid-cols-2 overflow-hidden">
       {/* Left */}
-      <div
-        className="flex flex-col justify-end px-20 pb-24 pt-36 relative z-10"
-        style={{ background: "var(--warm-white)" }}
-      >
-        {/* Decorative line */}
-        <div
-          className="absolute top-0 left-20 w-px h-32"
-          style={{
-            background: "linear-gradient(to bottom, transparent, var(--gold))",
-            opacity: 0.4,
-          }}
-        />
+      <div className="flex flex-col justify-end px-20 pb-24 pt-36 relative z-10 bg-[#faf8f4]">
+        <div className="absolute top-0 left-20 w-px h-32 bg-gradient-to-b from-transparent to-[#c9a96e] opacity-40" />
 
-        <p
-          className="font-body text-xs tracking-[0.35em] uppercase mb-8 opacity-0-start animate-fade-up"
-          style={{
-            color: "var(--gold)",
-            animationDelay: "0.3s",
-            animationFillMode: "forwards",
-          }}
+        <motion.p
+          className="font-body text-xs tracking-[0.35em] uppercase mb-8 text-[#c9a96e]"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: [0.4, 0, 0.2, 1], delay: 0.3 }}
         >
           Award-winning interior studio
-        </p>
+        </motion.p>
 
-        <h1
-          className="font-display font-light leading-[1.06] mb-8 opacity-0-start animate-fade-up"
-          style={{
-            fontSize: "clamp(3.4rem, 5vw, 5.8rem)",
-            color: "var(--ink)",
-            animationDelay: "0.5s",
-            animationFillMode: "forwards",
-          }}
+        <motion.h1
+          className="font-display font-light leading-[1.06] mb-8 text-[#1a1612] text-[clamp(3.4rem,5vw,5.8rem)]"
+          {...fadeUp(0.5)}
         >
           Designing Spaces <br />
-          That{" "}
-          <em className="italic" style={{ color: "var(--gold)" }}>
-            Feel Like
-          </em>
+          That <em className="italic text-[#c9a96e]">Feel Like</em>
           <br /> Home
-        </h1>
+        </motion.h1>
 
-        <p
-          className="font-body font-light leading-relaxed mb-14 max-w-sm opacity-0-start animate-fade-up"
-          style={{
-            color: "var(--stone)",
-            fontSize: "0.9rem",
-            animationDelay: "0.7s",
-            animationFillMode: "forwards",
-          }}
+        <motion.p
+          className="font-body font-light leading-relaxed mb-14 max-w-sm text-[#8a7f72] text-[0.9rem]"
+          {...fadeUp(0.7)}
         >
           Personalized interiors crafted with style and comfort. Experience
           luxury living tailored to your lifestyle.
-        </p>
+        </motion.p>
 
-        <div
-          className="flex items-center gap-6 opacity-0-start animate-fade-up"
-          style={{ animationDelay: "0.9s", animationFillMode: "forwards" }}
-        >
+        <motion.div className="flex items-center gap-6" {...fadeUp(0.9)}>
           <a
             href="#contact"
-            className="font-body text-xs tracking-[0.2em] uppercase px-9 py-4 transition-all duration-300 inline-block"
-            style={{ background: "var(--ink)", color: "var(--warm-white)" }}
-            onMouseEnter={(e) =>
-              ((e.currentTarget as HTMLElement).style.background =
-                "var(--deep)")
-            }
-            onMouseLeave={(e) =>
-              ((e.currentTarget as HTMLElement).style.background = "var(--ink)")
-            }
+            className="font-body text-xs tracking-[0.2em] uppercase px-9 py-4 bg-[#1a1612] text-[#faf8f4] hover:bg-[#2d2520] transition-all duration-300 inline-block"
           >
             Book Free Consultation
           </a>
           <a
             href="#work"
-            className="font-body text-xs tracking-[0.2em] uppercase flex items-center gap-3 transition-all duration-300 group"
-            style={{ color: "var(--stone)" }}
+            className="font-body text-xs tracking-[0.2em] uppercase flex items-center gap-3 text-[#8a7f72] hover:text-[#c9a96e] transition-all duration-300 group"
           >
             Explore Designs
-            <span
-              className="inline-block h-px transition-all duration-300 group-hover:w-14"
-              style={{ width: 28, background: "var(--stone)" }}
-            />
+            <span className="inline-block h-px w-7 group-hover:w-14 bg-[#8a7f72] group-hover:bg-[#c9a96e] transition-all duration-300" />
           </a>
-        </div>
+        </motion.div>
 
-        {/* Stats row */}
-        <div
-          className="flex gap-10 mt-16 pt-10 opacity-0-start animate-fade-up"
-          style={{
-            borderTop: "1px solid rgba(138,127,114,0.2)",
-            animationDelay: "1.1s",
-            animationFillMode: "forwards",
-          }}
+        <motion.div
+          className="flex gap-10 mt-16 pt-10 border-t border-[#8a7f72]/20"
+          {...fadeUp(1.1)}
         >
           {[
             ["320+", "Projects Done"],
@@ -283,27 +204,23 @@ function Hero() {
             ["98%", "Client Satisfaction"],
           ].map(([n, l]) => (
             <div key={l}>
-              <p
-                className="font-display font-light"
-                style={{ fontSize: "2.2rem", color: "var(--gold)" }}
-              >
+              <p className="font-display font-light text-[2.2rem] text-[#c9a96e]">
                 {n}
               </p>
-              <p
-                className="font-body text-xs tracking-widest uppercase mt-1"
-                style={{ color: "var(--stone)" }}
-              >
+              <p className="font-body text-xs tracking-widest uppercase mt-1 text-[#8a7f72]">
                 {l}
               </p>
             </div>
           ))}
-        </div>
+        </motion.div>
       </div>
 
-      {/* Right — image */}
-      <div
-        className="relative overflow-hidden opacity-0-start animate-fade-in"
-        style={{ animationDelay: "0.4s", animationFillMode: "forwards" }}
+      {/* Right */}
+      <motion.div
+        className="relative overflow-hidden"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1.2, delay: 0.4 }}
       >
         <Image
           src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&q=85"
@@ -312,32 +229,21 @@ function Hero() {
           className="object-cover"
           priority
         />
-        {/* Overlay gradient */}
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "linear-gradient(to right, rgba(250,248,244,0.15) 0%, transparent 40%)",
-          }}
-        />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#faf8f4]/15 to-transparent" />
 
         {/* Scroll hint */}
         <div className="absolute bottom-10 right-10 flex flex-col items-center gap-3">
-          <div
-            className="w-px h-14 animate-scroll-line"
-            style={{
-              background:
-                "linear-gradient(to bottom, var(--gold), transparent)",
-            }}
+          <motion.div
+            className="w-px h-14 bg-gradient-to-b from-[#c9a96e] to-transparent"
+            animate={{ scaleY: [0, 1, 0] }}
+            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+            style={{ transformOrigin: "top" }}
           />
-          <p
-            className="font-body text-xs tracking-[0.28em] uppercase"
-            style={{ color: "rgba(250,248,244,0.7)" }}
-          >
+          <p className="font-body text-xs tracking-[0.28em] uppercase text-[#faf8f4]/70">
             Scroll
           </p>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
@@ -368,53 +274,28 @@ const whyItems = [
 
 function WhyChooseUs() {
   return (
-    <section
-      id="work"
-      className="px-20 py-36"
-      style={{ background: "var(--warm-white)" }}
-    >
+    <section id="work" className="px-20 py-36 bg-[#faf8f4]">
       <div className="grid grid-cols-2 gap-24 items-start">
-        {/* Left text */}
         <div>
           <FadeSection>
-            <p
-              className="font-body text-xs tracking-[0.32em] uppercase mb-5"
-              style={{ color: "var(--gold)" }}
-            >
+            <p className="font-body text-xs tracking-[0.32em] uppercase mb-5 text-[#c9a96e]">
               Why Choose Us
             </p>
           </FadeSection>
           <FadeSection delay={100}>
-            <h2
-              className="font-display font-light leading-tight mb-8"
-              style={{
-                fontSize: "clamp(2.4rem,3.5vw,4rem)",
-                color: "var(--ink)",
-              }}
-            >
+            <h2 className="font-display font-light leading-tight mb-8 text-[#1a1612] text-[clamp(2.4rem,3.5vw,4rem)]">
               Craftsmanship <br />
-              <em className="italic" style={{ color: "var(--gold)" }}>
-                beyond
-              </em>{" "}
-              the ordinary
+              <em className="italic text-[#c9a96e]">beyond</em> the ordinary
             </h2>
           </FadeSection>
           <FadeSection delay={200}>
-            <p
-              className="font-body font-light leading-loose"
-              style={{
-                color: "var(--stone)",
-                fontSize: "0.9rem",
-                maxWidth: 380,
-              }}
-            >
-              We don't just design rooms — we sculpt experiences. Each project
-              is a dialogue between your vision and our expertise, resulting in
-              spaces that resonate deeply and endure beautifully.
+            <p className="font-body font-light leading-loose text-[#8a7f72] text-[0.9rem] max-w-95">
+              We don&apos;t just design rooms — we sculpt experiences. Each
+              project is a dialogue between your vision and our expertise,
+              resulting in spaces that resonate deeply and endure beautifully.
             </p>
           </FadeSection>
 
-          {/* Decorative image */}
           <FadeSection delay={300} className="mt-14 relative">
             <div className="relative h-72 overflow-hidden">
               <Image
@@ -424,54 +305,38 @@ function WhyChooseUs() {
                 className="object-cover"
               />
             </div>
-            <div
-              className="absolute -bottom-6 -right-6 w-32 h-32 font-display font-light flex flex-col items-center justify-center text-center"
-              style={{ background: "var(--gold)", color: "var(--warm-white)" }}
-            >
-              <span style={{ fontSize: "2.2rem", lineHeight: 1 }}>10+</span>
-              <span
-                className="font-body text-xs tracking-widest uppercase mt-1"
-                style={{ fontSize: "0.6rem" }}
-              >
+            <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-[#c9a96e] text-[#faf8f4] font-display font-light flex flex-col items-center justify-center text-center">
+              <span className="text-[2.2rem] leading-none">10+</span>
+              <span className="font-body text-[0.6rem] tracking-widest uppercase mt-1">
                 Countries Served
               </span>
             </div>
           </FadeSection>
         </div>
 
-        {/* Right grid */}
-        <div className="grid grid-cols-1 gap-0 mt-8">
+        <div className="grid grid-cols-1 mt-8">
           {whyItems.map(({ icon: Icon, title, desc }, i) => (
             <FadeSection key={title} delay={i * 80}>
-              <div
-                className="group flex items-start gap-6 py-8 transition-all duration-300"
-                style={{ borderBottom: "1px solid rgba(138,127,114,0.18)" }}
+              <motion.div
+                className="group flex items-start gap-6 py-8 border-b border-[#8a7f72]/18"
+                whileHover={{ x: 4 }}
+                transition={{ duration: 0.2 }}
               >
-                <div
-                  className="w-12 h-12 flex items-center justify-center shrink-0 transition-all duration-300 group-hover:bg-(--gold)"
-                  style={{ border: "1px solid rgba(201,169,110,0.4)" }}
-                >
+                <div className="w-12 h-12 flex items-center justify-center shrink-0 border border-[#c9a96e]/40 group-hover:bg-[#c9a96e] transition-all duration-300">
                   <Icon
                     size={22}
-                    style={{ color: "var(--gold)" }}
-                    className="group-hover:text-white transition-colors duration-300"
+                    className="text-[#c9a96e] group-hover:text-white transition-colors duration-300"
                   />
                 </div>
                 <div>
-                  <h3
-                    className="font-body font-normal tracking-wide mb-2"
-                    style={{ color: "var(--ink)", fontSize: "0.95rem" }}
-                  >
+                  <h3 className="font-body font-normal tracking-wide mb-2 text-[#1a1612] text-[0.95rem]">
                     {title}
                   </h3>
-                  <p
-                    className="font-body font-light leading-relaxed"
-                    style={{ color: "var(--stone)", fontSize: "0.85rem" }}
-                  >
+                  <p className="font-body font-light leading-relaxed text-[#8a7f72] text-[0.85rem]">
                     {desc}
                   </p>
                 </div>
-              </div>
+              </motion.div>
             </FadeSection>
           ))}
         </div>
@@ -512,34 +377,17 @@ function Services() {
   const [hovered, setHovered] = useState<number | null>(null);
 
   return (
-    <section
-      id="services"
-      className="py-36 px-20"
-      style={{ background: "var(--cream)" }}
-    >
-      {/* Header */}
+    <section id="services" className="py-36 px-20 bg-[#f7f2ea]">
       <div className="flex items-end justify-between mb-20">
         <div>
           <FadeSection>
-            <p
-              className="font-body text-xs tracking-[0.32em] uppercase mb-5"
-              style={{ color: "var(--gold)" }}
-            >
+            <p className="font-body text-xs tracking-[0.32em] uppercase mb-5 text-[#c9a96e]">
               Our Services
             </p>
           </FadeSection>
           <FadeSection delay={100}>
-            <h2
-              className="font-display font-light leading-tight"
-              style={{
-                fontSize: "clamp(2.4rem,3.5vw,4rem)",
-                color: "var(--ink)",
-              }}
-            >
-              Transforming{" "}
-              <em className="italic" style={{ color: "var(--gold)" }}>
-                every
-              </em>
+            <h2 className="font-display font-light leading-tight text-[#1a1612] text-[clamp(2.4rem,3.5vw,4rem)]">
+              Transforming <em className="italic text-[#c9a96e]">every</em>
               <br /> corner of your life
             </h2>
           </FadeSection>
@@ -547,14 +395,7 @@ function Services() {
         <FadeSection delay={150}>
           <a
             href="#"
-            className="font-body text-xs tracking-[0.2em] uppercase flex items-center gap-3 transition-colors duration-300 group"
-            style={{ color: "var(--stone)" }}
-            onMouseEnter={(e) =>
-              ((e.currentTarget as HTMLElement).style.color = "var(--gold)")
-            }
-            onMouseLeave={(e) =>
-              ((e.currentTarget as HTMLElement).style.color = "var(--stone)")
-            }
+            className="font-body text-xs tracking-[0.2em] uppercase flex items-center gap-3 text-[#8a7f72] hover:text-[#c9a96e] transition-colors duration-300 group"
           >
             View All Services
             <MdArrowForward
@@ -565,72 +406,51 @@ function Services() {
         </FadeSection>
       </div>
 
-      {/* Service rows */}
       <div>
         {services.map(({ title, desc, img, num }, i) => (
           <FadeSection key={title} delay={i * 60}>
-            <div
-              className="group grid grid-cols-[80px_1fr_1fr_auto] items-center py-8 transition-all duration-400"
-              style={{
-                borderTop: "1px solid rgba(138,127,114,0.18)",
-                borderBottom:
-                  i === services.length - 1
-                    ? "1px solid rgba(138,127,114,0.18)"
-                    : "none",
-                background:
-                  hovered === i ? "rgba(201,169,110,0.05)" : "transparent",
+            <motion.div
+              className="grid grid-cols-[80px_1fr_1fr_auto] items-center py-8 border-t border-[#8a7f72]/18 last:border-b last:border-[#8a7f72]/18 cursor-pointer"
+              animate={{
+                backgroundColor:
+                  hovered === i ? "rgba(201,169,110,0.05)" : "rgba(0,0,0,0)",
               }}
+              transition={{ duration: 0.3 }}
               onMouseEnter={() => setHovered(i)}
               onMouseLeave={() => setHovered(null)}
             >
-              {/* Number */}
-              <span
-                className="font-display font-light transition-colors duration-300"
-                style={{
-                  fontSize: "1.1rem",
-                  color: hovered === i ? "var(--gold)" : "var(--stone)",
-                }}
+              <motion.span
+                className="font-display font-light text-[1.1rem]"
+                animate={{ color: hovered === i ? "#c9a96e" : "#8a7f72" }}
+                transition={{ duration: 0.3 }}
               >
                 {num}
-              </span>
+              </motion.span>
 
-              {/* Title */}
-              <h3
-                className="font-display font-light transition-all duration-300"
-                style={{
-                  fontSize: "clamp(1.6rem, 2.5vw, 2.2rem)",
-                  color: hovered === i ? "var(--ink)" : "var(--ink)",
-                  transform:
-                    hovered === i ? "translateX(8px)" : "translateX(0)",
-                }}
+              <motion.h3
+                className="font-display font-light text-[#1a1612] text-[clamp(1.6rem,2.5vw,2.2rem)]"
+                animate={{ x: hovered === i ? 8 : 0 }}
+                transition={{ duration: 0.3 }}
               >
                 {title}
-              </h3>
+              </motion.h3>
 
-              {/* Desc */}
-              <p
-                className="font-body font-light leading-relaxed"
-                style={{
-                  color: "var(--stone)",
-                  fontSize: "0.85rem",
-                  maxWidth: 320,
-                }}
-              >
+              <p className="font-body font-light leading-relaxed text-[#8a7f72] text-[0.85rem] max-w-[320px]">
                 {desc}
               </p>
 
-              {/* Hover image */}
-              <div
-                className="relative overflow-hidden shrink-0 transition-all duration-500"
-                style={{
+              <motion.div
+                className="relative overflow-hidden shrink-0"
+                animate={{
                   width: hovered === i ? 160 : 0,
                   height: hovered === i ? 100 : 0,
                   opacity: hovered === i ? 1 : 0,
                 }}
+                transition={{ duration: 0.4, ease: "easeInOut" }}
               >
                 <Image src={img} alt={title} fill className="object-cover" />
-              </div>
-            </div>
+              </motion.div>
+            </motion.div>
           </FadeSection>
         ))}
       </div>
@@ -664,72 +484,33 @@ const steps = [
 
 function Process() {
   return (
-    <section
-      id="process"
-      className="py-36"
-      style={{ background: "var(--ink)" }}
-    >
+    <section id="process" className="py-36 bg-[#1a1612]">
       <div className="px-20">
         <FadeSection>
-          <p
-            className="font-body text-xs tracking-[0.32em] uppercase mb-5"
-            style={{ color: "var(--gold)" }}
-          >
+          <p className="font-body text-xs tracking-[0.32em] uppercase mb-5 text-[#c9a96e]">
             The Design Journey
           </p>
         </FadeSection>
         <FadeSection delay={100}>
-          <h2
-            className="font-display font-light leading-tight mb-20"
-            style={{
-              fontSize: "clamp(2.4rem,3.5vw,4rem)",
-              color: "var(--warm-white)",
-            }}
-          >
+          <h2 className="font-display font-light leading-tight mb-20 text-[#faf8f4] text-[clamp(2.4rem,3.5vw,4rem)]">
             A seamless process <br />
             from{" "}
-            <em className="italic" style={{ color: "var(--gold)" }}>
-              concept to completion
-            </em>
+            <em className="italic text-[#c9a96e]">concept to completion</em>
           </h2>
         </FadeSection>
 
         <div className="grid grid-cols-4 gap-0">
           {steps.map(({ n, title, desc }, i) => (
             <FadeSection key={title} delay={i * 80}>
-              <div
-                className="relative pt-12 pr-10"
-                style={{ borderTop: "1px solid rgba(201,169,110,0.35)" }}
-              >
-                {/* Step dot */}
-                <div
-                  className="absolute -top-1.75 left-0 w-3.5 h-3.5 rounded-full"
-                  style={{ background: "var(--gold)" }}
-                />
-
-                <span
-                  className="font-display font-light block mb-6"
-                  style={{
-                    fontSize: "3.5rem",
-                    color: "rgba(201,169,110,0.25)",
-                    lineHeight: 1,
-                  }}
-                >
+              <div className="relative pt-12 pr-10 border-t border-[#c9a96e]/35">
+                <div className="absolute -top-[7px] left-0 w-3.5 h-3.5 rounded-full bg-[#c9a96e]" />
+                <span className="font-display font-light block mb-6 text-[3.5rem] text-[#c9a96e]/25 leading-none">
                   {n}
                 </span>
-                <h3
-                  className="font-body tracking-wide mb-4"
-                  style={{ color: "var(--warm-white)", fontSize: "1rem" }}
-                >
+                <h3 className="font-body tracking-wide mb-4 text-[#faf8f4] text-base">
                   {title}
                 </h3>
-                <p
-                  className="font-body font-light leading-loose"
-                  style={{
-                    color: "rgba(250,248,244,0.45)",
-                    fontSize: "0.83rem",
-                  }}
-                >
+                <p className="font-body font-light leading-loose text-[#faf8f4]/45 text-[0.83rem]">
                   {desc}
                 </p>
               </div>
@@ -741,27 +522,28 @@ function Process() {
   );
 }
 
+/* ─── Testimonials ──────────────────────────────────────── */
 const testimonials = [
   {
     quote:
       "DesignSpace transformed our penthouse into a modern masterpiece. Their attention to detail and choice of materials were impeccable.",
     name: "Alexandra Sterling",
     role: "CEO, TechFlow",
-    img: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    img: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=774&auto=format&fit=crop",
   },
   {
     quote:
       "The transition from old to new was so smooth. Their project management is top-tier. I couldn't be happier with my new minimalist kitchen.",
     name: "James Harrington",
     role: "Architect",
-    img: "https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    img: "https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=774&auto=format&fit=crop",
   },
   {
     quote:
       "Every corner of our home now tells a story. The expert designers really listened to what we wanted and exceeded expectations.",
     name: "Elena Rodriguez",
     role: "Art Curator",
-    img: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    img: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1740&auto=format&fit=crop",
   },
 ];
 
@@ -770,97 +552,75 @@ function Testimonials() {
   const t = testimonials[active];
 
   return (
-    <section
-      className="py-36 px-20"
-      style={{ background: "var(--warm-white)" }}
-    >
+    <section className="py-36 px-20 bg-[#faf8f4]">
       <div className="grid grid-cols-2 gap-24 items-center">
-        {/* Left */}
         <div>
           <FadeSection>
-            <p
-              className="font-body text-xs tracking-[0.32em] uppercase mb-5"
-              style={{ color: "var(--gold)" }}
-            >
+            <p className="font-body text-xs tracking-[0.32em] uppercase mb-5 text-[#c9a96e]">
               Client Stories
             </p>
           </FadeSection>
           <FadeSection delay={100}>
-            <h2
-              className="font-display font-light leading-tight mb-16"
-              style={{
-                fontSize: "clamp(2.4rem,3.5vw,4rem)",
-                color: "var(--ink)",
-              }}
-            >
+            <h2 className="font-display font-light leading-tight mb-16 text-[#1a1612] text-[clamp(2.4rem,3.5vw,4rem)]">
               What Our <br />
-              <em className="italic" style={{ color: "var(--gold)" }}>
-                Clients Say
-              </em>
+              <em className="italic text-[#c9a96e]">Clients Say</em>
             </h2>
           </FadeSection>
 
-          {/* Stars */}
           <div className="flex gap-1 mb-8">
             {[...Array(5)].map((_, i) => (
-              <MdStar key={i} size={18} style={{ color: "var(--gold)" }} />
+              <MdStar key={i} size={18} className="text-[#c9a96e]" />
             ))}
           </div>
 
-          {/* Quote */}
-          <blockquote
-            key={active}
-            className="font-display font-light leading-relaxed mb-10"
-            style={{
-              fontSize: "clamp(1.2rem, 1.8vw, 1.6rem)",
-              color: "var(--ink)",
-              fontStyle: "italic",
-              opacity: 0,
-              animation: "fadeUp 0.6s ease forwards",
-            }}
-          >
-            &ldquo;{t.quote}&rdquo;
-          </blockquote>
-
-          <div
-            key={`author-${active}`}
-            style={{ opacity: 0, animation: "fadeUp 0.6s ease 0.15s forwards" }}
-          >
-            <p
-              className="font-body font-medium"
-              style={{ color: "var(--ink)", fontSize: "0.9rem" }}
+          <AnimatePresence mode="wait">
+            <motion.blockquote
+              key={`quote-${active}`}
+              className="font-display font-light italic leading-relaxed mb-10 text-[#1a1612] text-[clamp(1.2rem,1.8vw,1.6rem)]"
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -16 }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
             >
-              {t.name}
-            </p>
-            <p
-              className="font-body font-light text-sm mt-0.5"
-              style={{ color: "var(--stone)" }}
-            >
-              {t.role}
-            </p>
-          </div>
+              &ldquo;{t.quote}&rdquo;
+            </motion.blockquote>
+          </AnimatePresence>
 
-          {/* Pagination */}
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={`author-${active}`}
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -12 }}
+              transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
+            >
+              <p className="font-body font-medium text-[#1a1612] text-[0.9rem]">
+                {t.name}
+              </p>
+              <p className="font-body font-light text-sm mt-0.5 text-[#8a7f72]">
+                {t.role}
+              </p>
+            </motion.div>
+          </AnimatePresence>
+
           <div className="flex gap-3 mt-10">
             {testimonials.map((_, i) => (
-              <button
+              <motion.button
                 key={i}
                 onClick={() => setActive(i)}
-                className="transition-all duration-300"
-                style={{
+                className="h-[3px] border-none outline-none rounded-none"
+                animate={{
                   width: active === i ? 36 : 10,
-                  height: 3,
-                  background:
-                    active === i ? "var(--gold)" : "rgba(138,127,114,0.3)",
-                  border: "none",
+                  backgroundColor:
+                    active === i ? "#c9a96e" : "rgba(138,127,114,0.3)",
                 }}
+                transition={{ duration: 0.3 }}
               />
             ))}
           </div>
         </div>
 
-        {/* Right — portrait collage */}
-        <FadeSection delay={200} className="relative h-135">
+        <FadeSection delay={200} className="relative h-[540px]">
           {testimonials.map(({ img, name }, i) => {
             const positions = [
               { top: "0%", left: "10%", w: 260, h: 340 },
@@ -869,24 +629,25 @@ function Testimonials() {
             ];
             const p = positions[i];
             return (
-              <div
+              <motion.div
                 key={name}
-                className="absolute overflow-hidden transition-all duration-500"
-                style={{
-                  top: p.top,
-                  left: p.left,
-                  width: p.w,
-                  height: p.h,
+                className="absolute overflow-hidden cursor-pointer"
+                style={{ top: p.top, left: p.left, width: p.w, height: p.h }}
+                animate={{
                   opacity: active === i ? 1 : 0.35,
-                  transform: active === i ? "scale(1.04)" : "scale(1)",
+                  scale: active === i ? 1.04 : 1,
                   zIndex: active === i ? 3 : 1,
-                  outline: active === i ? "2px solid var(--gold)" : "none",
-                  outlineOffset: 6,
+                  outline:
+                    active === i
+                      ? "2px solid #c9a96e"
+                      : "2px solid transparent",
+                  outlineOffset: active === i ? "6px" : "0px",
                 }}
+                transition={{ duration: 0.5 }}
                 onClick={() => setActive(i)}
               >
                 <Image src={img} alt={name} fill className="object-cover" />
-              </div>
+              </motion.div>
             );
           })}
         </FadeSection>
@@ -900,71 +661,39 @@ function CTA() {
   return (
     <section
       id="contact"
-      className="py-36 px-20 relative overflow-hidden"
-      style={{ background: "var(--cream)" }}
+      className="py-36 px-20 relative overflow-hidden bg-[#f7f2ea]"
     >
-      {/* Big background text */}
-      <p
-        className="absolute -bottom-6 left-0 right-0 text-center font-display font-light select-none pointer-events-none leading-none"
-        style={{
-          fontSize: "clamp(6rem, 14vw, 16rem)",
-          color: "rgba(201,169,110,0.07)",
-          whiteSpace: "nowrap",
-        }}
-      >
+      <p className="absolute -bottom-6 left-0 right-0 text-center font-display font-light select-none pointer-events-none leading-none text-[clamp(6rem,14vw,16rem)] text-[#c9a96e]/[0.07] whitespace-nowrap">
         DesignSpace
       </p>
 
       <div className="relative z-10 text-center max-w-2xl mx-auto">
         <FadeSection>
-          <p
-            className="font-body text-xs tracking-[0.32em] uppercase mb-6"
-            style={{ color: "var(--gold)" }}
-          >
+          <p className="font-body text-xs tracking-[0.32em] uppercase mb-6 text-[#c9a96e]">
             Let&apos;s Build Together
           </p>
         </FadeSection>
         <FadeSection delay={100}>
-          <h2
-            className="font-display font-light leading-tight mb-8"
-            style={{
-              fontSize: "clamp(2.8rem, 4.5vw, 5rem)",
-              color: "var(--ink)",
-            }}
-          >
+          <h2 className="font-display font-light leading-tight mb-8 text-[#1a1612] text-[clamp(2.8rem,4.5vw,5rem)]">
             Let&apos;s Build Your <br />
-            <em className="italic" style={{ color: "var(--gold)" }}>
-              Dream Space
-            </em>
+            <em className="italic text-[#c9a96e]">Dream Space</em>
           </h2>
         </FadeSection>
         <FadeSection delay={200}>
-          <p
-            className="font-body font-light leading-loose mb-12"
-            style={{ color: "var(--stone)", fontSize: "0.9rem" }}
-          >
+          <p className="font-body font-light leading-loose mb-12 text-[#8a7f72] text-[0.9rem]">
             Join hundreds of satisfied homeowners who have elevated their living
             experience with DesignSpace&apos;s bespoke design services.
           </p>
         </FadeSection>
         <FadeSection delay={300}>
-          <a
+          <motion.a
             href="#"
-            className="inline-block font-body text-xs tracking-[0.22em] uppercase px-12 py-5 transition-all duration-300"
-            style={{ background: "var(--ink)", color: "var(--warm-white)" }}
-            onMouseEnter={(e) => {
-              (e.currentTarget as HTMLElement).style.background = "var(--gold)";
-              (e.currentTarget as HTMLElement).style.transform =
-                "translateY(-3px)";
-            }}
-            onMouseLeave={(e) => {
-              (e.currentTarget as HTMLElement).style.background = "var(--ink)";
-              (e.currentTarget as HTMLElement).style.transform =
-                "translateY(0)";
-            }}
+            className="inline-block font-body text-xs tracking-[0.22em] uppercase px-12 py-5 bg-[#1a1612] text-[#faf8f4] cursor-pointer"
+            whileHover={{ backgroundColor: "#c9a96e", y: -3 }}
+            transition={{ duration: 0.3 }}
           >
             Get Started Today
-          </a>
+          </motion.a>
         </FadeSection>
       </div>
     </section>
@@ -974,33 +703,19 @@ function CTA() {
 /* ─── Footer ────────────────────────────────────────────── */
 function Footer() {
   return (
-    <footer className="px-20 py-20" style={{ background: "var(--deep)" }}>
-      <div
-        className="grid grid-cols-4 gap-16 mb-16 pb-16"
-        style={{ borderBottom: "1px solid rgba(255,255,255,0.08)" }}
-      >
-        {/* Brand */}
+    <footer className="px-20 py-20 bg-[#2d2520]">
+      <div className="grid grid-cols-4 gap-16 mb-16 pb-16 border-b border-white/8">
         <div className="col-span-1">
-          <p
-            className="font-display text-3xl font-light tracking-widest mb-4"
-            style={{ color: "var(--warm-white)" }}
-          >
-            Design<span style={{ color: "var(--gold)" }}>Space</span>
+          <p className="font-display text-3xl font-light tracking-widest mb-4 text-[#faf8f4]">
+            Design<span className="text-[#c9a96e]">Space</span>
           </p>
-          <p
-            className="font-body font-light leading-loose text-xs"
-            style={{ color: "rgba(250,248,244,0.4)", maxWidth: 220 }}
-          >
+          <p className="font-body font-light leading-loose text-xs text-[#faf8f4]/40 max-w-[220px]">
             Crafting premium interiors that redefine modern luxury and comfort.
           </p>
         </div>
 
-        {/* Explore */}
         <div>
-          <p
-            className="font-body text-xs tracking-[0.25em] uppercase mb-6"
-            style={{ color: "var(--gold)" }}
-          >
+          <p className="font-body text-xs tracking-[0.25em] uppercase mb-6 text-[#c9a96e]">
             Explore
           </p>
           <ul className="space-y-3">
@@ -1008,15 +723,7 @@ function Footer() {
               <li key={l}>
                 <a
                   href="#"
-                  className="font-body font-light text-xs tracking-wide transition-colors duration-300"
-                  style={{ color: "rgba(250,248,244,0.45)" }}
-                  onMouseEnter={(e) =>
-                    ((e.target as HTMLElement).style.color = "var(--gold)")
-                  }
-                  onMouseLeave={(e) =>
-                    ((e.target as HTMLElement).style.color =
-                      "rgba(250,248,244,0.45)")
-                  }
+                  className="font-body font-light text-xs tracking-wide text-[#faf8f4]/45 hover:text-[#c9a96e] transition-colors duration-300"
                 >
                   {l}
                 </a>
@@ -1025,51 +732,34 @@ function Footer() {
           </ul>
         </div>
 
-        {/* Contact */}
         <div>
-          <p
-            className="font-body text-xs tracking-[0.25em] uppercase mb-6"
-            style={{ color: "var(--gold)" }}
-          >
+          <p className="font-body text-xs tracking-[0.25em] uppercase mb-6 text-[#c9a96e]">
             Contact
           </p>
           <ul className="space-y-4">
             <li className="flex items-center gap-3">
-              <MdMail size={14} style={{ color: "var(--gold)" }} />
-              <span
-                className="font-body font-light text-xs"
-                style={{ color: "rgba(250,248,244,0.45)" }}
-              >
+              <MdMail size={14} className="text-[#c9a96e]" />
+              <span className="font-body font-light text-xs text-[#faf8f4]/45">
                 hello@designspace.com
               </span>
             </li>
             <li className="flex items-center gap-3">
-              <MdPhone size={14} style={{ color: "var(--gold)" }} />
-              <span
-                className="font-body font-light text-xs"
-                style={{ color: "rgba(250,248,244,0.45)" }}
-              >
+              <MdPhone size={14} className="text-[#c9a96e]" />
+              <span className="font-body font-light text-xs text-[#faf8f4]/45">
                 +1 (555) 000-1234
               </span>
             </li>
             <li className="flex items-center gap-3">
-              <MdLocationOn size={14} style={{ color: "var(--gold)" }} />
-              <span
-                className="font-body font-light text-xs"
-                style={{ color: "rgba(250,248,244,0.45)" }}
-              >
+              <MdLocationOn size={14} className="text-[#c9a96e]" />
+              <span className="font-body font-light text-xs text-[#faf8f4]/45">
                 123 Interior Ave, NY
               </span>
             </li>
           </ul>
         </div>
 
-        {/* Social */}
         <div>
-          <p
-            className="font-body text-xs tracking-[0.25em] uppercase mb-6"
-            style={{ color: "var(--gold)" }}
-          >
+          <p className="font-body text-xs tracking-[0.25em] uppercase mb-6 text-[#c9a96e]">
             Social
           </p>
           <ul className="space-y-3">
@@ -1077,16 +767,7 @@ function Footer() {
               <li key={s}>
                 <a
                   href="#"
-                  className="font-body font-light text-xs tracking-wide transition-colors duration-300 flex items-center gap-2"
-                  style={{ color: "rgba(250,248,244,0.45)" }}
-                  onMouseEnter={(e) =>
-                    ((e.currentTarget as HTMLElement).style.color =
-                      "var(--gold)")
-                  }
-                  onMouseLeave={(e) =>
-                    ((e.currentTarget as HTMLElement).style.color =
-                      "rgba(250,248,244,0.45)")
-                  }
+                  className="font-body font-light text-xs tracking-wide text-[#faf8f4]/45 hover:text-[#c9a96e] transition-colors duration-300 flex items-center gap-2"
                 >
                   <MdPublic size={13} />
                   {s}
@@ -1097,12 +778,8 @@ function Footer() {
         </div>
       </div>
 
-      {/* Bottom bar */}
       <div className="flex items-center justify-between">
-        <p
-          className="font-body font-light text-xs tracking-wide"
-          style={{ color: "rgba(250,248,244,0.25)" }}
-        >
+        <p className="font-body font-light text-xs tracking-wide text-[#faf8f4]/25">
           © 2024 DesignSpace Interior Collective. All rights reserved.
         </p>
         <div className="flex gap-8">
@@ -1110,15 +787,7 @@ function Footer() {
             <a
               key={l}
               href="#"
-              className="font-body font-light text-xs tracking-wide transition-colors duration-300"
-              style={{ color: "rgba(250,248,244,0.25)" }}
-              onMouseEnter={(e) =>
-                ((e.target as HTMLElement).style.color = "var(--gold)")
-              }
-              onMouseLeave={(e) =>
-                ((e.target as HTMLElement).style.color =
-                  "rgba(250,248,244,0.25)")
-              }
+              className="font-body font-light text-xs tracking-wide text-[#faf8f4]/25 hover:text-[#c9a96e] transition-colors duration-300"
             >
               {l}
             </a>
