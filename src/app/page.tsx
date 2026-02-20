@@ -15,7 +15,6 @@ import {
   MdPublic,
 } from "react-icons/md";
 
-/* ─── Cursor ────────────────────────────────────────────── */
 function CustomCursor() {
   const dot = useRef<HTMLDivElement>(null);
   const ring = useRef<HTMLDivElement>(null);
@@ -51,12 +50,12 @@ function CustomCursor() {
     <>
       <div
         ref={dot}
-        className="fixed z-[9999] w-2.5 h-2.5 rounded-full pointer-events-none -translate-x-1/2 -translate-y-1/2 mix-blend-multiply"
+        className="fixed z-9999 w-2.5 h-2.5 rounded-full pointer-events-none -translate-x-1/2 -translate-y-1/2 mix-blend-multiply"
         style={{ background: "var(--gold)" }}
       />
       <div
         ref={ring}
-        className="fixed z-[9998] w-10 h-10 rounded-full pointer-events-none -translate-x-1/2 -translate-y-1/2"
+        className="fixed z-9998 w-10 h-10 rounded-full pointer-events-none -translate-x-1/2 -translate-y-1/2"
         style={{ border: "1px solid var(--gold)", opacity: 0.45 }}
       />
     </>
@@ -481,7 +480,7 @@ function WhyChooseUs() {
                 style={{ borderBottom: "1px solid rgba(138,127,114,0.18)" }}
               >
                 <div
-                  className="w-12 h-12 flex items-center justify-center shrink-0 transition-all duration-300 group-hover:bg-[var(--gold)]"
+                  className="w-12 h-12 flex items-center justify-center shrink-0 transition-all duration-300 group-hover:bg-(--gold)"
                   style={{ border: "1px solid rgba(201,169,110,0.4)" }}
                 >
                   <Icon
@@ -736,7 +735,7 @@ function Process() {
               >
                 {/* Step dot */}
                 <div
-                  className="absolute -top-[7px] left-0 w-3.5 h-3.5 rounded-full"
+                  className="absolute -top-1.75 left-0 w-3.5 h-3.5 rounded-full"
                   style={{ background: "var(--gold)" }}
                 />
 
@@ -894,7 +893,7 @@ function Testimonials() {
         </div>
 
         {/* Right — portrait collage */}
-        <FadeSection delay={200} className="relative h-[540px]">
+        <FadeSection delay={200} className="relative h-135">
           {testimonials.map(({ img, name }, i) => {
             const positions = [
               { top: "0%", left: "10%", w: 260, h: 340 },
