@@ -5,19 +5,27 @@ import { useLenis } from "./context/LenisContext";
 
 export default function ScrollToLink({
   to,
+  href,
   children,
   className,
+  onClick,
 }: {
-  to: string;
+  to?: string;
+  href?: string;
   children: React.ReactNode;
   className?: string;
+  onClick?: () => void;
 }) {
   const lenis = useLenis();
 
-  const handleClick = () => {
-    if (!lenis) return;
+  const target = to ?? href;
 
-    const el = document.querySelector<HTMLElement>(to);
+  const handleClick = () => {
+    onClick?.();
+
+    if (!lenis || !target) return;
+
+    const el = document.querySelector<HTMLElement>(target);
     if (!el) return;
 
     lenis.scrollTo(el, {

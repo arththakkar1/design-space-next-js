@@ -4,12 +4,17 @@ import { useEffect, useRef, useState } from "react";
 export function CrosshairCursor() {
   const cursor = useRef<HTMLDivElement>(null);
   const [hovered, setHovered] = useState(false);
+  const [isMobile, setIsMobile] = useState(true); // default true to avoid flash
 
   useEffect(() => {
+    setIsMobile(window.matchMedia("(pointer: coarse)").matches);
+  }, []);
+
+  useEffect(() => {
+    if (isMobile) return;
+
     let x = 0,
-      y = 0,
-      cx = 0,
-      cy = 0;
+      y = 0;
 
     const move = (e: MouseEvent) => {
       x = e.clientX;
@@ -23,24 +28,19 @@ export function CrosshairCursor() {
       setHovered(!!isInteractive);
     };
 
-    const raf = () => {
-      cx += (x - cx) * 0.1;
-      cy += (y - cy) * 0.1;
-      requestAnimationFrame(raf);
-    };
-
     window.addEventListener("mousemove", move);
-    requestAnimationFrame(raf);
     return () => window.removeEventListener("mousemove", move);
-  }, []);
+  }, [isMobile]);
+
+  if (isMobile) return null;
 
   return (
     <div
       ref={cursor}
       className="fixed z-9999 pointer-events-none -translate-x-1/2 -translate-y-1/2"
       style={{
-        transition: "transform 0.3s ease",
         transform: `translate(-50%, -50%) rotate(${hovered ? "45deg" : "0deg"}) scale(${hovered ? 1.4 : 1})`,
+        transition: "transform 0.3s ease",
       }}
     >
       {/* Horizontal line */}

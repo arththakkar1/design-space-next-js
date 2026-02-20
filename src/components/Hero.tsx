@@ -17,11 +17,11 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="min-h-screen grid grid-cols-2 overflow-hidden"
+      className="min-h-screen grid grid-cols-1 md:grid-cols-2 overflow-hidden"
     >
       {/* Left */}
-      <div className="flex flex-col justify-end px-20 pb-24 pt-36 relative z-10 bg-[#faf8f4]">
-        <div className="absolute top-0 left-20 w-px h-32 bg-linear-to-b from-transparent to-[#c9a96e] opacity-40" />
+      <div className="flex flex-col justify-end px-6 md:px-20 pb-16 md:pb-24 pt-24 md:pt-36 relative z-10 bg-[#faf8f4]">
+        <div className="absolute top-0 left-6 md:left-20 w-px h-20 md:h-32 bg-linear-to-b from-transparent to-[#c9a96e] opacity-40" />
 
         <motion.p
           className="font-body text-xs tracking-[0.35em] uppercase mb-8 text-[#c9a96e]"
@@ -33,7 +33,7 @@ export function Hero() {
         </motion.p>
 
         <motion.h1
-          className="font-display font-light leading-[1.06] mb-8 text-[#1a1612] text-[clamp(3.4rem,5vw,5.8rem)]"
+          className="font-display font-light leading-[1.06] mb-8 text-[#1a1612] text-[clamp(2.2rem,5vw,5.8rem)] md:text-[clamp(3.4rem,5vw,5.8rem)]"
           {...fadeUp(0.5)}
         >
           Designing Spaces <br />
@@ -42,14 +42,17 @@ export function Hero() {
         </motion.h1>
 
         <motion.p
-          className="font-body font-light leading-relaxed mb-14 max-w-sm text-[#8a7f72] text-[0.9rem]"
+          className="font-body font-light leading-relaxed mb-8 md:mb-14 max-w-full md:max-w-sm text-[#8a7f72] text-[0.9rem]"
           {...fadeUp(0.7)}
         >
           Personalized interiors crafted with style and comfort. Experience
           luxury living tailored to your lifestyle.
         </motion.p>
 
-        <motion.div className="flex items-center gap-6" {...fadeUp(0.9)}>
+        <motion.div
+          className="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-6"
+          {...fadeUp(0.9)}
+        >
           <ScrollToLink
             to="#contact"
             className="font-body text-xs tracking-[0.2em] uppercase px-9 py-4 bg-[#1a1612] text-[#faf8f4] hover:bg-[#2d2520] transition-all duration-300 inline-block"
@@ -66,7 +69,7 @@ export function Hero() {
         </motion.div>
 
         <motion.div
-          className="flex gap-10 mt-16 pt-10 border-t border-[#8a7f72]/20"
+          className="flex flex-col md:flex-row gap-6 md:gap-10 mt-8 md:mt-16 pt-6 md:pt-10 border-t border-[#8a7f72]/20"
           {...fadeUp(1.1)}
         >
           {[
@@ -88,7 +91,7 @@ export function Hero() {
 
       {/* Right */}
       <motion.div
-        className="relative overflow-hidden"
+        className="relative overflow-hidden min-h-80 md:min-h-0"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1.2, delay: 0.4 }}
@@ -103,9 +106,9 @@ export function Hero() {
         <div className="absolute inset-0 bg-linear-to-r from-[#faf8f4]/15 to-transparent" />
 
         {/* Scroll hint */}
-        <div className="absolute bottom-10 right-10 flex flex-col items-center gap-3">
+        <div className="absolute bottom-6 md:bottom-10 right-6 md:right-10 flex flex-col items-center gap-2 md:gap-3">
           <motion.div
-            className="w-px h-14 bg-linear-to-b from-[#c9a96e] to-transparent"
+            className="w-px h-10 md:h-14 bg-linear-to-b from-[#c9a96e] to-transparent"
             animate={{ scaleY: [0, 1, 0] }}
             transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
             style={{ transformOrigin: "top" }}

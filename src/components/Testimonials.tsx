@@ -35,8 +35,8 @@ export function Testimonials() {
   const t = testimonials[active];
 
   return (
-    <section className="py-36 px-20 bg-[#faf8f4]">
-      <div className="grid grid-cols-2 gap-24 items-center">
+    <section className="py-24 md:py-36 px-6 md:px-20 bg-[#faf8f4]">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 items-center">
         <div>
           <FadeSection>
             <p className="font-body text-xs tracking-[0.32em] uppercase mb-5 text-[#c9a96e]">
@@ -44,7 +44,7 @@ export function Testimonials() {
             </p>
           </FadeSection>
           <FadeSection delay={100}>
-            <h2 className="font-display font-light leading-tight mb-16 text-[#1a1612] text-[clamp(2.4rem,3.5vw,4rem)]">
+            <h2 className="font-display font-light leading-tight mb-8 md:mb-16 text-[#1a1612] text-[clamp(1.4rem,2.5vw,4rem)] md:text-[clamp(2.4rem,3.5vw,4rem)]">
               What Our <br />
               <em className="italic text-[#c9a96e]">Clients Say</em>
             </h2>
@@ -59,7 +59,7 @@ export function Testimonials() {
           <AnimatePresence mode="wait">
             <motion.blockquote
               key={`quote-${active}`}
-              className="font-display font-light italic leading-relaxed mb-10 text-[#1a1612] text-[clamp(1.2rem,1.8vw,1.6rem)]"
+              className="font-display font-light italic leading-relaxed mb-6 md:mb-10 text-[#1a1612] text-[clamp(1rem,1.2vw,1.6rem)] md:text-[clamp(1.2rem,1.8vw,1.6rem)]"
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -16 }}
@@ -86,7 +86,7 @@ export function Testimonials() {
             </motion.div>
           </AnimatePresence>
 
-          <div className="flex gap-3 mt-10">
+          <div className="flex gap-2 md:gap-3 mt-6 md:mt-10">
             {testimonials.map((_, i) => (
               <motion.button
                 key={i}
@@ -103,12 +103,12 @@ export function Testimonials() {
           </div>
         </div>
 
-        <FadeSection delay={200} className="relative h-135">
+        <FadeSection delay={200} className="relative h-80 md:h-135">
           {testimonials.map(({ img, name }, i) => {
             const positions = [
-              { top: "0%", left: "10%", w: 260, h: 340 },
-              { top: "20%", left: "50%", w: 220, h: 280 },
-              { top: "55%", left: "20%", w: 200, h: 240 },
+              { top: "0%", left: "10%", w: 180, h: 220 },
+              { top: "20%", left: "50%", w: 140, h: 180 },
+              { top: "55%", left: "20%", w: 120, h: 140 },
             ];
             const p = positions[i];
             return (

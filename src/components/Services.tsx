@@ -37,8 +37,11 @@ export function Services() {
   const [hovered, setHovered] = useState<number | null>(null);
 
   return (
-    <section id="services" className="py-36 px-20 bg-[#f7f2ea]">
-      <div className="flex items-end justify-between mb-20">
+    <section
+      id="services"
+      className="py-24 md:py-36 px-6 md:px-20 bg-[#f7f2ea]"
+    >
+      <div className="flex flex-col md:flex-row items-start md:items-end justify-between mb-12 md:mb-20 gap-6 md:gap-0">
         <div>
           <FadeSection>
             <p className="font-body text-xs tracking-[0.32em] uppercase mb-5 text-[#c9a96e]">
@@ -70,7 +73,7 @@ export function Services() {
         {services.map(({ title, desc, img, num }, i) => (
           <FadeSection key={title} delay={i * 60}>
             <motion.div
-              className="grid grid-cols-[80px_1fr_1fr_auto] items-center py-8 border-t border-[#8a7f72]/18 last:border-b last:border-[#8a7f72]/18 cursor-pointer"
+              className="grid grid-cols-1 md:grid-cols-[80px_1fr_1fr_auto] items-start md:items-center py-6 md:py-8 border-t border-[#8a7f72]/18 last:border-b last:border-[#8a7f72]/18 cursor-pointer gap-6 md:gap-0"
               animate={{
                 backgroundColor:
                   hovered === i ? "rgba(201,169,110,0.05)" : "rgba(0,0,0,0)",
@@ -88,14 +91,14 @@ export function Services() {
               </motion.span>
 
               <motion.h3
-                className="font-display font-light text-[#1a1612] text-[clamp(1.6rem,2.5vw,2.2rem)]"
+                className="font-display font-light text-[#1a1612] text-[clamp(1.2rem,2vw,2.2rem)] md:text-[clamp(1.6rem,2.5vw,2.2rem)]"
                 animate={{ x: hovered === i ? 8 : 0 }}
                 transition={{ duration: 0.3 }}
               >
                 {title}
               </motion.h3>
 
-              <p className="font-body font-light leading-relaxed text-[#8a7f72] text-[0.85rem] max-w-[320px]">
+              <p className="font-body font-light leading-relaxed text-[#8a7f72] text-[0.85rem] max-w-full md:max-w-80">
                 {desc}
               </p>
 
