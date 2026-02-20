@@ -741,7 +741,6 @@ function Process() {
   );
 }
 
-/* ─── Testimonials ──────────────────────────────────────── */
 const testimonials = [
   {
     quote:

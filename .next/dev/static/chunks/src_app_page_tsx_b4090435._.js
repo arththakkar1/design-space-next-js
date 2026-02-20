@@ -21,11 +21,11 @@ var _s = __turbopack_context__.k.signature(), _s1 = __turbopack_context__.k.sign
 function CustomCursor() {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(5);
-    if ($[0] !== "db44acea6e0426d9a4d930f12e4290eed94f08c146cc40d944fc107167c650c7") {
+    if ($[0] !== "f3bb14a56c8ee0034d9bc36f1fb9798fe6c7d194c85cd80cc57139a09b03320e") {
         for(let $i = 0; $i < 5; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "db44acea6e0426d9a4d930f12e4290eed94f08c146cc40d944fc107167c650c7";
+        $[0] = "f3bb14a56c8ee0034d9bc36f1fb9798fe6c7d194c85cd80cc57139a09b03320e";
     }
     const dot = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     const ring = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
@@ -121,11 +121,11 @@ _c = CustomCursor;
 /* ─── Animated section wrapper ─────────────────────────── */ function FadeSection(t0) {
     _s1();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(11);
-    if ($[0] !== "db44acea6e0426d9a4d930f12e4290eed94f08c146cc40d944fc107167c650c7") {
+    if ($[0] !== "f3bb14a56c8ee0034d9bc36f1fb9798fe6c7d194c85cd80cc57139a09b03320e") {
         for(let $i = 0; $i < 11; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "db44acea6e0426d9a4d930f12e4290eed94f08c146cc40d944fc107167c650c7";
+        $[0] = "f3bb14a56c8ee0034d9bc36f1fb9798fe6c7d194c85cd80cc57139a09b03320e";
     }
     const { children, className: t1, delay: t2 } = t0;
     const className = t1 === undefined ? "" : t1;
@@ -205,11 +205,11 @@ _c1 = FadeSection;
 /* ─── Nav ───────────────────────────────────────────────── */ function Nav() {
     _s2();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(15);
-    if ($[0] !== "db44acea6e0426d9a4d930f12e4290eed94f08c146cc40d944fc107167c650c7") {
+    if ($[0] !== "f3bb14a56c8ee0034d9bc36f1fb9798fe6c7d194c85cd80cc57139a09b03320e") {
         for(let $i = 0; $i < 15; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "db44acea6e0426d9a4d930f12e4290eed94f08c146cc40d944fc107167c650c7";
+        $[0] = "f3bb14a56c8ee0034d9bc36f1fb9798fe6c7d194c85cd80cc57139a09b03320e";
     }
     const [scrolled, setScrolled] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     let t0;
@@ -397,11 +397,11 @@ function _NavAnonymousAOnMouseEnter(e) {
 }
 function Hero() {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(18);
-    if ($[0] !== "db44acea6e0426d9a4d930f12e4290eed94f08c146cc40d944fc107167c650c7") {
+    if ($[0] !== "f3bb14a56c8ee0034d9bc36f1fb9798fe6c7d194c85cd80cc57139a09b03320e") {
         for(let $i = 0; $i < 18; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "db44acea6e0426d9a4d930f12e4290eed94f08c146cc40d944fc107167c650c7";
+        $[0] = "f3bb14a56c8ee0034d9bc36f1fb9798fe6c7d194c85cd80cc57139a09b03320e";
     }
     let t0;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
@@ -827,11 +827,11 @@ const whyItems = [
 ];
 function WhyChooseUs() {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(12);
-    if ($[0] !== "db44acea6e0426d9a4d930f12e4290eed94f08c146cc40d944fc107167c650c7") {
+    if ($[0] !== "f3bb14a56c8ee0034d9bc36f1fb9798fe6c7d194c85cd80cc57139a09b03320e") {
         for(let $i = 0; $i < 12; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "db44acea6e0426d9a4d930f12e4290eed94f08c146cc40d944fc107167c650c7";
+        $[0] = "f3bb14a56c8ee0034d9bc36f1fb9798fe6c7d194c85cd80cc57139a09b03320e";
     }
     let t0;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
@@ -1187,11 +1187,11 @@ const services = [
 function Services() {
     _s3();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(11);
-    if ($[0] !== "db44acea6e0426d9a4d930f12e4290eed94f08c146cc40d944fc107167c650c7") {
+    if ($[0] !== "f3bb14a56c8ee0034d9bc36f1fb9798fe6c7d194c85cd80cc57139a09b03320e") {
         for(let $i = 0; $i < 11; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "db44acea6e0426d9a4d930f12e4290eed94f08c146cc40d944fc107167c650c7";
+        $[0] = "f3bb14a56c8ee0034d9bc36f1fb9798fe6c7d194c85cd80cc57139a09b03320e";
     }
     const [hovered, setHovered] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
     let t0;
@@ -1500,11 +1500,11 @@ const steps = [
 ];
 function Process() {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(7);
-    if ($[0] !== "db44acea6e0426d9a4d930f12e4290eed94f08c146cc40d944fc107167c650c7") {
+    if ($[0] !== "f3bb14a56c8ee0034d9bc36f1fb9798fe6c7d194c85cd80cc57139a09b03320e") {
         for(let $i = 0; $i < 7; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "db44acea6e0426d9a4d930f12e4290eed94f08c146cc40d944fc107167c650c7";
+        $[0] = "f3bb14a56c8ee0034d9bc36f1fb9798fe6c7d194c85cd80cc57139a09b03320e";
     }
     let t0;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
@@ -1634,7 +1634,7 @@ function Process() {
     return t5;
 }
 _c6 = Process;
-/* ─── Testimonials ──────────────────────────────────────── */ function _ProcessStepsMap(t0, i) {
+function _ProcessStepsMap(t0, i) {
     const { n, title, desc } = t0;
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(FadeSection, {
         delay: i * 80,
@@ -1651,7 +1651,7 @@ _c6 = Process;
                     }
                 }, void 0, false, {
                     fileName: "[project]/src/app/page.tsx",
-                    lineNumber: 846,
+                    lineNumber: 844,
                     columnNumber: 8
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1664,7 +1664,7 @@ _c6 = Process;
                     children: n
                 }, void 0, false, {
                     fileName: "[project]/src/app/page.tsx",
-                    lineNumber: 848,
+                    lineNumber: 846,
                     columnNumber: 12
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1676,7 +1676,7 @@ _c6 = Process;
                     children: title
                 }, void 0, false, {
                     fileName: "[project]/src/app/page.tsx",
-                    lineNumber: 852,
+                    lineNumber: 850,
                     columnNumber: 20
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1688,18 +1688,18 @@ _c6 = Process;
                     children: desc
                 }, void 0, false, {
                     fileName: "[project]/src/app/page.tsx",
-                    lineNumber: 855,
+                    lineNumber: 853,
                     columnNumber: 22
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/page.tsx",
-            lineNumber: 844,
+            lineNumber: 842,
             columnNumber: 50
         }, this)
     }, title, false, {
         fileName: "[project]/src/app/page.tsx",
-        lineNumber: 844,
+        lineNumber: 842,
         columnNumber: 10
     }, this);
 }
@@ -1726,11 +1726,11 @@ const testimonials = [
 function Testimonials() {
     _s4();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(37);
-    if ($[0] !== "db44acea6e0426d9a4d930f12e4290eed94f08c146cc40d944fc107167c650c7") {
+    if ($[0] !== "f3bb14a56c8ee0034d9bc36f1fb9798fe6c7d194c85cd80cc57139a09b03320e") {
         for(let $i = 0; $i < 37; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "db44acea6e0426d9a4d930f12e4290eed94f08c146cc40d944fc107167c650c7";
+        $[0] = "f3bb14a56c8ee0034d9bc36f1fb9798fe6c7d194c85cd80cc57139a09b03320e";
     }
     const [active, setActive] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
     const t = testimonials[active];
@@ -1754,12 +1754,12 @@ function Testimonials() {
                 children: "Client Stories"
             }, void 0, false, {
                 fileName: "[project]/src/app/page.tsx",
-                lineNumber: 897,
+                lineNumber: 895,
                 columnNumber: 23
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/page.tsx",
-            lineNumber: 897,
+            lineNumber: 895,
             columnNumber: 10
         }, this);
         $[2] = t1;
@@ -1780,7 +1780,7 @@ function Testimonials() {
     if ($[4] === Symbol.for("react.memo_cache_sentinel")) {
         t3 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
             fileName: "[project]/src/app/page.tsx",
-            lineNumber: 916,
+            lineNumber: 914,
             columnNumber: 10
         }, this);
         $[4] = t3;
@@ -1805,18 +1805,18 @@ function Testimonials() {
                         children: "Clients Say"
                     }, void 0, false, {
                         fileName: "[project]/src/app/page.tsx",
-                        lineNumber: 923,
+                        lineNumber: 921,
                         columnNumber: 119
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/page.tsx",
-                lineNumber: 923,
+                lineNumber: 921,
                 columnNumber: 35
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/page.tsx",
-            lineNumber: 923,
+            lineNumber: 921,
             columnNumber: 10
         }, this);
         $[5] = t4;
@@ -1832,7 +1832,7 @@ function Testimonials() {
             ].map(_TestimonialsAnonymous)
         }, void 0, false, {
             fileName: "[project]/src/app/page.tsx",
-            lineNumber: 932,
+            lineNumber: 930,
             columnNumber: 10
         }, this);
         $[6] = t5;
@@ -1864,7 +1864,7 @@ function Testimonials() {
             ]
         }, active, true, {
             fileName: "[project]/src/app/page.tsx",
-            lineNumber: 952,
+            lineNumber: 950,
             columnNumber: 10
         }, this);
         $[8] = active;
@@ -1902,7 +1902,7 @@ function Testimonials() {
             children: t.name
         }, void 0, false, {
             fileName: "[project]/src/app/page.tsx",
-            lineNumber: 982,
+            lineNumber: 980,
             columnNumber: 11
         }, this);
         $[13] = t.name;
@@ -1927,7 +1927,7 @@ function Testimonials() {
             children: t.role
         }, void 0, false, {
             fileName: "[project]/src/app/page.tsx",
-            lineNumber: 999,
+            lineNumber: 997,
             columnNumber: 11
         }, this);
         $[16] = t.role;
@@ -1945,7 +1945,7 @@ function Testimonials() {
             ]
         }, t8, true, {
             fileName: "[project]/src/app/page.tsx",
-            lineNumber: 1007,
+            lineNumber: 1005,
             columnNumber: 11
         }, this);
         $[18] = t11;
@@ -1971,7 +1971,7 @@ function Testimonials() {
                     }
                 }, i_0, false, {
                     fileName: "[project]/src/app/page.tsx",
-                    lineNumber: 1018,
+                    lineNumber: 1016,
                     columnNumber: 57
                 }, this)
         }["Testimonials[testimonials.map()]"]);
@@ -1987,7 +1987,7 @@ function Testimonials() {
             children: t15
         }, void 0, false, {
             fileName: "[project]/src/app/page.tsx",
-            lineNumber: 1034,
+            lineNumber: 1032,
             columnNumber: 11
         }, this);
         $[24] = t15;
@@ -2008,7 +2008,7 @@ function Testimonials() {
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/page.tsx",
-            lineNumber: 1042,
+            lineNumber: 1040,
             columnNumber: 11
         }, this);
         $[26] = t14;
@@ -2067,12 +2067,12 @@ function Testimonials() {
                         className: "object-cover"
                     }, void 0, false, {
                         fileName: "[project]/src/app/page.tsx",
-                        lineNumber: 1087,
+                        lineNumber: 1085,
                         columnNumber: 64
                     }, this)
                 }, name, false, {
                     fileName: "[project]/src/app/page.tsx",
-                    lineNumber: 1075,
+                    lineNumber: 1073,
                     columnNumber: 16
                 }, this);
             }
@@ -2090,7 +2090,7 @@ function Testimonials() {
             children: t18
         }, void 0, false, {
             fileName: "[project]/src/app/page.tsx",
-            lineNumber: 1097,
+            lineNumber: 1095,
             columnNumber: 11
         }, this);
         $[32] = t18;
@@ -2111,12 +2111,12 @@ function Testimonials() {
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/page.tsx",
-                lineNumber: 1105,
+                lineNumber: 1103,
                 columnNumber: 55
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/page.tsx",
-            lineNumber: 1105,
+            lineNumber: 1103,
             columnNumber: 11
         }, this);
         $[34] = t17;
@@ -2137,17 +2137,17 @@ _c7 = Testimonials;
         }
     }, i, false, {
         fileName: "[project]/src/app/page.tsx",
-        lineNumber: 1117,
+        lineNumber: 1115,
         columnNumber: 10
     }, this);
 }
 function CTA() {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(9);
-    if ($[0] !== "db44acea6e0426d9a4d930f12e4290eed94f08c146cc40d944fc107167c650c7") {
+    if ($[0] !== "f3bb14a56c8ee0034d9bc36f1fb9798fe6c7d194c85cd80cc57139a09b03320e") {
         for(let $i = 0; $i < 9; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "db44acea6e0426d9a4d930f12e4290eed94f08c146cc40d944fc107167c650c7";
+        $[0] = "f3bb14a56c8ee0034d9bc36f1fb9798fe6c7d194c85cd80cc57139a09b03320e";
     }
     let t0;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
@@ -2170,7 +2170,7 @@ function CTA() {
             children: "DesignSpace"
         }, void 0, false, {
             fileName: "[project]/src/app/page.tsx",
-            lineNumber: 1140,
+            lineNumber: 1138,
             columnNumber: 10
         }, this);
         $[2] = t1;
@@ -2188,12 +2188,12 @@ function CTA() {
                 children: "Let's Build Together"
             }, void 0, false, {
                 fileName: "[project]/src/app/page.tsx",
-                lineNumber: 1151,
+                lineNumber: 1149,
                 columnNumber: 23
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/page.tsx",
-            lineNumber: 1151,
+            lineNumber: 1149,
             columnNumber: 10
         }, this);
         $[3] = t2;
@@ -2214,7 +2214,7 @@ function CTA() {
     if ($[5] === Symbol.for("react.memo_cache_sentinel")) {
         t4 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
             fileName: "[project]/src/app/page.tsx",
-            lineNumber: 1170,
+            lineNumber: 1168,
             columnNumber: 10
         }, this);
         $[5] = t4;
@@ -2239,18 +2239,18 @@ function CTA() {
                         children: "Dream Space"
                     }, void 0, false, {
                         fileName: "[project]/src/app/page.tsx",
-                        lineNumber: 1177,
+                        lineNumber: 1175,
                         columnNumber: 126
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/page.tsx",
-                lineNumber: 1177,
+                lineNumber: 1175,
                 columnNumber: 35
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/page.tsx",
-            lineNumber: 1177,
+            lineNumber: 1175,
             columnNumber: 10
         }, this);
         $[6] = t5;
@@ -2270,12 +2270,12 @@ function CTA() {
                 children: "Join hundreds of satisfied homeowners who have elevated their living experience with DesignSpace's bespoke design services."
             }, void 0, false, {
                 fileName: "[project]/src/app/page.tsx",
-                lineNumber: 1186,
+                lineNumber: 1184,
                 columnNumber: 35
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/page.tsx",
-            lineNumber: 1186,
+            lineNumber: 1184,
             columnNumber: 10
         }, this);
         $[7] = t6;
@@ -2310,24 +2310,24 @@ function CTA() {
                                 children: "Get Started Today"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/page.tsx",
-                                lineNumber: 1196,
+                                lineNumber: 1194,
                                 columnNumber: 194
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/page.tsx",
-                            lineNumber: 1196,
+                            lineNumber: 1194,
                             columnNumber: 169
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/page.tsx",
-                    lineNumber: 1196,
+                    lineNumber: 1194,
                     columnNumber: 96
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/page.tsx",
-            lineNumber: 1196,
+            lineNumber: 1194,
             columnNumber: 10
         }, this);
         $[8] = t7;
@@ -2347,11 +2347,11 @@ function _CTAAOnMouseEnter(e) {
 }
 function Footer() {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(19);
-    if ($[0] !== "db44acea6e0426d9a4d930f12e4290eed94f08c146cc40d944fc107167c650c7") {
+    if ($[0] !== "f3bb14a56c8ee0034d9bc36f1fb9798fe6c7d194c85cd80cc57139a09b03320e") {
         for(let $i = 0; $i < 19; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "db44acea6e0426d9a4d930f12e4290eed94f08c146cc40d944fc107167c650c7";
+        $[0] = "f3bb14a56c8ee0034d9bc36f1fb9798fe6c7d194c85cd80cc57139a09b03320e";
     }
     let t0;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
@@ -2394,13 +2394,13 @@ function Footer() {
                     children: "Space"
                 }, void 0, false, {
                     fileName: "[project]/src/app/page.tsx",
-                    lineNumber: 1253,
+                    lineNumber: 1251,
                     columnNumber: 96
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/page.tsx",
-            lineNumber: 1253,
+            lineNumber: 1251,
             columnNumber: 10
         }, this);
         $[4] = t3;
@@ -2422,13 +2422,13 @@ function Footer() {
                     children: "Crafting premium interiors that redefine modern luxury and comfort."
                 }, void 0, false, {
                     fileName: "[project]/src/app/page.tsx",
-                    lineNumber: 1262,
+                    lineNumber: 1260,
                     columnNumber: 42
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/page.tsx",
-            lineNumber: 1262,
+            lineNumber: 1260,
             columnNumber: 10
         }, this);
         $[5] = t4;
@@ -2445,7 +2445,7 @@ function Footer() {
             children: "Explore"
         }, void 0, false, {
             fileName: "[project]/src/app/page.tsx",
-            lineNumber: 1272,
+            lineNumber: 1270,
             columnNumber: 10
         }, this);
         $[6] = t5;
@@ -2467,13 +2467,13 @@ function Footer() {
                     ].map(_FooterAnonymous)
                 }, void 0, false, {
                     fileName: "[project]/src/app/page.tsx",
-                    lineNumber: 1281,
+                    lineNumber: 1279,
                     columnNumber: 19
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/page.tsx",
-            lineNumber: 1281,
+            lineNumber: 1279,
             columnNumber: 10
         }, this);
         $[7] = t6;
@@ -2490,7 +2490,7 @@ function Footer() {
             children: "Contact"
         }, void 0, false, {
             fileName: "[project]/src/app/page.tsx",
-            lineNumber: 1288,
+            lineNumber: 1286,
             columnNumber: 10
         }, this);
         $[8] = t7;
@@ -2506,7 +2506,7 @@ function Footer() {
             }
         }, void 0, false, {
             fileName: "[project]/src/app/page.tsx",
-            lineNumber: 1297,
+            lineNumber: 1295,
             columnNumber: 10
         }, this);
         $[9] = t8;
@@ -2527,13 +2527,13 @@ function Footer() {
                     children: "hello@designspace.com"
                 }, void 0, false, {
                     fileName: "[project]/src/app/page.tsx",
-                    lineNumber: 1306,
+                    lineNumber: 1304,
                     columnNumber: 54
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/page.tsx",
-            lineNumber: 1306,
+            lineNumber: 1304,
             columnNumber: 10
         }, this);
         $[10] = t9;
@@ -2549,7 +2549,7 @@ function Footer() {
             }
         }, void 0, false, {
             fileName: "[project]/src/app/page.tsx",
-            lineNumber: 1315,
+            lineNumber: 1313,
             columnNumber: 11
         }, this);
         $[11] = t10;
@@ -2570,13 +2570,13 @@ function Footer() {
                     children: "+1 (555) 000-1234"
                 }, void 0, false, {
                     fileName: "[project]/src/app/page.tsx",
-                    lineNumber: 1324,
+                    lineNumber: 1322,
                     columnNumber: 56
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/page.tsx",
-            lineNumber: 1324,
+            lineNumber: 1322,
             columnNumber: 11
         }, this);
         $[12] = t11;
@@ -2592,7 +2592,7 @@ function Footer() {
             }
         }, void 0, false, {
             fileName: "[project]/src/app/page.tsx",
-            lineNumber: 1333,
+            lineNumber: 1331,
             columnNumber: 11
         }, this);
         $[13] = t12;
@@ -2621,25 +2621,25 @@ function Footer() {
                                     children: "123 Interior Ave, NY"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/page.tsx",
-                                    lineNumber: 1342,
+                                    lineNumber: 1340,
                                     columnNumber: 100
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/page.tsx",
-                            lineNumber: 1342,
+                            lineNumber: 1340,
                             columnNumber: 55
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/page.tsx",
-                    lineNumber: 1342,
+                    lineNumber: 1340,
                     columnNumber: 20
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/page.tsx",
-            lineNumber: 1342,
+            lineNumber: 1340,
             columnNumber: 11
         }, this);
         $[14] = t13;
@@ -2656,7 +2656,7 @@ function Footer() {
             children: "Social"
         }, void 0, false, {
             fileName: "[project]/src/app/page.tsx",
-            lineNumber: 1351,
+            lineNumber: 1349,
             columnNumber: 11
         }, this);
         $[15] = t14;
@@ -2685,19 +2685,19 @@ function Footer() {
                             ].map(_FooterAnonymous2)
                         }, void 0, false, {
                             fileName: "[project]/src/app/page.tsx",
-                            lineNumber: 1360,
+                            lineNumber: 1358,
                             columnNumber: 98
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/page.tsx",
-                    lineNumber: 1360,
+                    lineNumber: 1358,
                     columnNumber: 88
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/page.tsx",
-            lineNumber: 1360,
+            lineNumber: 1358,
             columnNumber: 11
         }, this);
         $[16] = t15;
@@ -2714,7 +2714,7 @@ function Footer() {
             children: "© 2024 DesignSpace Interior Collective. All rights reserved."
         }, void 0, false, {
             fileName: "[project]/src/app/page.tsx",
-            lineNumber: 1367,
+            lineNumber: 1365,
             columnNumber: 11
         }, this);
         $[17] = t16;
@@ -2740,19 +2740,19 @@ function Footer() {
                             ].map(_FooterAnonymous3)
                         }, void 0, false, {
                             fileName: "[project]/src/app/page.tsx",
-                            lineNumber: 1376,
+                            lineNumber: 1374,
                             columnNumber: 115
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/page.tsx",
-                    lineNumber: 1376,
+                    lineNumber: 1374,
                     columnNumber: 59
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/page.tsx",
-            lineNumber: 1376,
+            lineNumber: 1374,
             columnNumber: 11
         }, this);
         $[18] = t17;
@@ -2774,7 +2774,7 @@ _c9 = Footer;
         children: l_0
     }, l_0, false, {
         fileName: "[project]/src/app/page.tsx",
-        lineNumber: 1386,
+        lineNumber: 1384,
         columnNumber: 10
     }, this);
 }
@@ -2799,19 +2799,19 @@ function _FooterAnonymous2(s) {
                     size: 13
                 }, void 0, false, {
                     fileName: "[project]/src/app/page.tsx",
-                    lineNumber: 1399,
+                    lineNumber: 1397,
                     columnNumber: 100
                 }, this),
                 s
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/page.tsx",
-            lineNumber: 1397,
+            lineNumber: 1395,
             columnNumber: 22
         }, this)
     }, s, false, {
         fileName: "[project]/src/app/page.tsx",
-        lineNumber: 1397,
+        lineNumber: 1395,
         columnNumber: 10
     }, this);
 }
@@ -2834,12 +2834,12 @@ function _FooterAnonymous(l) {
             children: l
         }, void 0, false, {
             fileName: "[project]/src/app/page.tsx",
-            lineNumber: 1408,
+            lineNumber: 1406,
             columnNumber: 22
         }, this)
     }, l, false, {
         fileName: "[project]/src/app/page.tsx",
-        lineNumber: 1408,
+        lineNumber: 1406,
         columnNumber: 10
     }, this);
 }
@@ -2851,11 +2851,11 @@ function _FooterAnonymousAOnMouseEnter(e) {
 }
 function Home() {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(2);
-    if ($[0] !== "db44acea6e0426d9a4d930f12e4290eed94f08c146cc40d944fc107167c650c7") {
+    if ($[0] !== "f3bb14a56c8ee0034d9bc36f1fb9798fe6c7d194c85cd80cc57139a09b03320e") {
         for(let $i = 0; $i < 2; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "db44acea6e0426d9a4d930f12e4290eed94f08c146cc40d944fc107167c650c7";
+        $[0] = "f3bb14a56c8ee0034d9bc36f1fb9798fe6c7d194c85cd80cc57139a09b03320e";
     }
     let t0;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
@@ -2863,55 +2863,55 @@ function Home() {
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(CustomCursor, {}, void 0, false, {
                     fileName: "[project]/src/app/page.tsx",
-                    lineNumber: 1428,
+                    lineNumber: 1426,
                     columnNumber: 12
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Nav, {}, void 0, false, {
                     fileName: "[project]/src/app/page.tsx",
-                    lineNumber: 1428,
+                    lineNumber: 1426,
                     columnNumber: 28
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Hero, {}, void 0, false, {
                             fileName: "[project]/src/app/page.tsx",
-                            lineNumber: 1428,
+                            lineNumber: 1426,
                             columnNumber: 41
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(WhyChooseUs, {}, void 0, false, {
                             fileName: "[project]/src/app/page.tsx",
-                            lineNumber: 1428,
+                            lineNumber: 1426,
                             columnNumber: 49
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Services, {}, void 0, false, {
                             fileName: "[project]/src/app/page.tsx",
-                            lineNumber: 1428,
+                            lineNumber: 1426,
                             columnNumber: 64
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Process, {}, void 0, false, {
                             fileName: "[project]/src/app/page.tsx",
-                            lineNumber: 1428,
+                            lineNumber: 1426,
                             columnNumber: 76
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Testimonials, {}, void 0, false, {
                             fileName: "[project]/src/app/page.tsx",
-                            lineNumber: 1428,
+                            lineNumber: 1426,
                             columnNumber: 87
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(CTA, {}, void 0, false, {
                             fileName: "[project]/src/app/page.tsx",
-                            lineNumber: 1428,
+                            lineNumber: 1426,
                             columnNumber: 103
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/page.tsx",
-                    lineNumber: 1428,
+                    lineNumber: 1426,
                     columnNumber: 35
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Footer, {}, void 0, false, {
                     fileName: "[project]/src/app/page.tsx",
-                    lineNumber: 1428,
+                    lineNumber: 1426,
                     columnNumber: 117
                 }, this)
             ]
