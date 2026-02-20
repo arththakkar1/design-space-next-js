@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Manrope, Roboto } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header";
+
 import LenisProvider from "./lenis";
+import { CrosshairCursor } from "@/components/CustomCursor";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -23,6 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${manrope.className} antialiased`}>
+        <CrosshairCursor />
         <LenisProvider>{children}</LenisProvider>
       </body>
     </html>

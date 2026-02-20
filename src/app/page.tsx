@@ -17,52 +17,6 @@ import {
 import { motion, AnimatePresence } from "framer-motion";
 import ScrollToLink from "@/components/ScrollToLink";
 
-/* ─── Custom Cursor ─────────────────────────────────────── */
-function CustomCursor() {
-  const dot = useRef<HTMLDivElement>(null);
-  const ring = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    let rx = 0,
-      ry = 0,
-      dx = 0,
-      dy = 0;
-    const move = (e: MouseEvent) => {
-      dx = e.clientX;
-      dy = e.clientY;
-      if (dot.current) {
-        dot.current.style.left = `${dx}px`;
-        dot.current.style.top = `${dy}px`;
-      }
-    };
-    const raf = () => {
-      rx += (dx - rx) * 0.12;
-      ry += (dy - ry) * 0.12;
-      if (ring.current) {
-        ring.current.style.left = `${rx}px`;
-        ring.current.style.top = `${ry}px`;
-      }
-      requestAnimationFrame(raf);
-    };
-    window.addEventListener("mousemove", move);
-    requestAnimationFrame(raf);
-    return () => window.removeEventListener("mousemove", move);
-  }, []);
-
-  return (
-    <>
-      <div
-        ref={dot}
-        className="fixed z-[9999] w-2.5 h-2.5 rounded-full pointer-events-none -translate-x-1/2 -translate-y-1/2 mix-blend-multiply bg-gold"
-      />
-      <div
-        ref={ring}
-        className="fixed z-[9998] w-10 h-10 rounded-full pointer-events-none -translate-x-1/2 -translate-y-1/2 border border-gold opacity-45"
-      />
-    </>
-  );
-}
-
 /* ─── FadeSection ───────────────────────────────────────── */
 function FadeSection({
   children,
@@ -802,7 +756,6 @@ function Footer() {
 export default function Home() {
   return (
     <>
-      <CustomCursor />
       <Nav />
       <main>
         <Hero />

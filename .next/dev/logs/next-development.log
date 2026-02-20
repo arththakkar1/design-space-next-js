@@ -820,3 +820,648 @@ Import traces:
 [01:17:02.669] Browser WARN    Image with src "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1740&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
 [01:17:43.209] Server  LOG     ✓ Compiled in 660ms
 [01:18:09.539] Server  LOG     ✓ Compiled in 339ms
+[01:26:48.541] Server  LOG     ✓ Compiled in 112ms
+[01:26:48.672] Server  ERROR   ⨯ ReferenceError: CustomCursor is not defined
+[01:26:48.724] Server  ERROR   ⨯ ReferenceError: CustomCursor is not defined
+[01:26:49.133] Browser ERROR   uncaughtError: ReferenceError: CustomCursor is not defined
+[01:26:49.134] Browser ERROR   uncaughtError: ReferenceError: CustomCursor is not defined
+[01:26:52.132] Browser ERROR   ./src/components/CustomCursor.tsx:1:10
+Ecmascript file had an error
+> 1 | import { useEffect, useRef } from "react";
+    |          ^^^^^^^^^
+  2 |
+  3 | export const CustomCursor = () => {
+  4 |   const dot = useRef<HTMLDivElement>(null);
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import trace:
+  Server Component:
+    ./src/components/CustomCursor.tsx
+    ./src/app/layout.tsx
+[01:26:52.132] Browser ERROR   ./src/components/CustomCursor.tsx:1:21
+Ecmascript file had an error
+> 1 | import { useEffect, useRef } from "react";
+    |                     ^^^^^^
+  2 |
+  3 | export const CustomCursor = () => {
+  4 |   const dot = useRef<HTMLDivElement>(null);
+
+You're importing a component that needs `useRef`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import trace:
+  Server Component:
+    ./src/components/CustomCursor.tsx
+    ./src/app/layout.tsx
+[01:26:52.133] Browser ERROR   ./src/components/CustomCursor.tsx:1:10
+Ecmascript file had an error
+> 1 | import { useEffect, useRef } from "react";
+    |          ^^^^^^^^^
+  2 |
+  3 | export const CustomCursor = () => {
+  4 |   const dot = useRef<HTMLDivElement>(null);
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import trace:
+  Server Component:
+    ./src/components/CustomCursor.tsx
+    ./src/app/layout.tsx
+[01:26:52.133] Browser ERROR   ./src/components/CustomCursor.tsx:1:21
+Ecmascript file had an error
+> 1 | import { useEffect, useRef } from "react";
+    |                     ^^^^^^
+  2 |
+  3 | export const CustomCursor = () => {
+  4 |   const dot = useRef<HTMLDivElement>(null);
+
+You're importing a component that needs `useRef`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import trace:
+  Server Component:
+    ./src/components/CustomCursor.tsx
+    ./src/app/layout.tsx
+[01:27:03.593] Server  LOG     ✓ Compiled in 448ms
+[01:27:04.135] Browser ERROR   ./src/components/CustomCursor.tsx:1:10
+Ecmascript file had an error
+> 1 | import { useEffect, useRef } from "react";
+    |          ^^^^^^^^^
+  2 |
+  3 | export const CustomCursor = () => {
+  4 |   const dot = useRef<HTMLDivElement>(null);
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import trace:
+  Server Component:
+    ./src/components/CustomCursor.tsx
+    ./src/app/layout.tsx
+[01:27:04.135] Browser ERROR   ./src/components/CustomCursor.tsx:1:21
+Ecmascript file had an error
+> 1 | import { useEffect, useRef } from "react";
+    |                     ^^^^^^
+  2 |
+  3 | export const CustomCursor = () => {
+  4 |   const dot = useRef<HTMLDivElement>(null);
+
+You're importing a component that needs `useRef`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import trace:
+  Server Component:
+    ./src/components/CustomCursor.tsx
+    ./src/app/layout.tsx
+[01:27:04.135] Browser ERROR   ./src/components/CustomCursor.tsx:1:10
+Ecmascript file had an error
+> 1 | import { useEffect, useRef } from "react";
+    |          ^^^^^^^^^
+  2 |
+  3 | export const CustomCursor = () => {
+  4 |   const dot = useRef<HTMLDivElement>(null);
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import trace:
+  Server Component:
+    ./src/components/CustomCursor.tsx
+    ./src/app/layout.tsx
+[01:27:04.135] Browser ERROR   ./src/components/CustomCursor.tsx:1:21
+Ecmascript file had an error
+> 1 | import { useEffect, useRef } from "react";
+    |                     ^^^^^^
+  2 |
+  3 | export const CustomCursor = () => {
+  4 |   const dot = useRef<HTMLDivElement>(null);
+
+You're importing a component that needs `useRef`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import trace:
+  Server Component:
+    ./src/components/CustomCursor.tsx
+    ./src/app/layout.tsx
+[01:27:18.045] Server  LOG     ✓ Compiled in 208ms
+[01:27:18.071] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:27:18.074] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:27:18.184] Browser ERROR   uncaughtError: ReferenceError: CustomCursor is not defined
+[01:27:18.539] Server  ERROR   ⨯ ReferenceError: CustomCursor is not defined
+[01:27:18.800] Server  ERROR   ⨯ ReferenceError: CustomCursor is not defined
+[01:27:19.249] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:27:19.327] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:27:19.639] Browser ERROR   uncaughtError: ReferenceError: CustomCursor is not defined
+[01:27:20.136] Browser ERROR   uncaughtError: ReferenceError: CustomCursor is not defined
+[01:27:33.084] Server  ERROR   ⨯ ReferenceError: CustomCursor is not defined
+[01:27:33.208] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:27:33.420] Browser ERROR   uncaughtError: ReferenceError: CustomCursor is not defined
+[01:27:34.296] Server  ERROR   ⨯ ReferenceError: CustomCursor is not defined
+[01:27:34.386] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:27:34.607] Browser ERROR   uncaughtError: ReferenceError: CustomCursor is not defined
+[01:28:12.418] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:28:12.419] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:28:12.432] Server  LOG     ✓ Compiled in 76ms
+[01:28:12.737] Server  ERROR   ⨯ ReferenceError: CustomCursor is not defined
+[01:28:12.820] Server  ERROR   ⨯ ReferenceError: CustomCursor is not defined
+[01:28:13.116] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:28:13.266] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:28:13.555] Browser ERROR   uncaughtError: ReferenceError: CustomCursor is not defined
+[01:28:14.133] Browser ERROR   uncaughtError: ReferenceError: CustomCursor is not defined
+[01:28:24.785] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:28:24.786] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:28:24.787] Server  LOG     ✓ Compiled in 254ms
+[01:28:25.471] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:28:25.531] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:28:25.933] Browser WARN    Image with src "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&q=85" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:28:25.933] Browser WARN    Image with src "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&q=85" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:28:26.133] Browser WARN    Image with src "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&q=85" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:28:26.133] Browser WARN    Image with src "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&q=85" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:28:26.133] Browser WARN    Image with src "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=700&q=80" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:28:26.133] Browser WARN    Image with src "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=700&q=80" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[01:28:26.133] Browser WARN    Image with src "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=700&q=80" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:28:26.133] Browser WARN    Image with src "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=700&q=80" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[01:28:26.133] Browser WARN    Image with src "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=700&q=80" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:28:26.133] Browser WARN    Image with src "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=700&q=80" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[01:28:26.133] Browser WARN    Image with src "https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&q=80" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:28:26.133] Browser WARN    Image with src "https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&q=80" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[01:28:26.133] Browser WARN    Image with src "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=774&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:28:26.133] Browser WARN    Image with src "https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=774&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:28:26.133] Browser WARN    Image with src "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1740&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:29:22.934] Server  LOG     ✓ Compiled in 160ms
+[01:29:23.149] Browser ERROR   ./src/components/CustomCursor.tsx:4:7
+Parsing ecmascript source code failed
+  2 | import { useEffect, useRef } from "react";
+  3 |
+> 4 | xport function CrosshairCursor() {
+    |       ^^^^^^^^
+  5 |   const cursor = useRef<HTMLDivElement>(null);
+  6 |   const [hovered, setHovered] = useState(false);
+  7 |
+
+Expected ';', '}' or <eof>
+
+Import trace:
+  Server Component:
+    ./src/components/CustomCursor.tsx
+    ./src/app/layout.tsx
+[01:29:23.149] Browser ERROR   ./src/components/CustomCursor.tsx:4:7
+Parsing ecmascript source code failed
+  2 | import { useEffect, useRef } from "react";
+  3 |
+> 4 | xport function CrosshairCursor() {
+    |       ^^^^^^^^
+  5 |   const cursor = useRef<HTMLDivElement>(null);
+  6 |   const [hovered, setHovered] = useState(false);
+  7 |
+
+Expected ';', '}' or <eof>
+
+Import trace:
+  Server Component:
+    ./src/components/CustomCursor.tsx
+    ./src/app/layout.tsx
+[01:29:23.544] Server  LOG     ✓ Compiled in 653ms
+[01:29:24.138] Browser ERROR   ./src/components/CustomCursor.tsx:4:7
+Parsing ecmascript source code failed
+  2 | import { useEffect, useRef } from "react";
+  3 |
+> 4 | xport function CrosshairCursor() {
+    |       ^^^^^^^^
+  5 |   const cursor = useRef<HTMLDivElement>(null);
+  6 |   const [hovered, setHovered] = useState(false);
+  7 |
+
+Expected ';', '}' or <eof>
+
+Import traces:
+  Server Component:
+    ./src/components/CustomCursor.tsx
+    ./src/app/layout.tsx
+
+  Client Component Browser:
+    ./src/components/CustomCursor.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/CustomCursor.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+[01:29:24.138] Browser ERROR   ./src/components/CustomCursor.tsx:4:7
+Parsing ecmascript source code failed
+  2 | import { useEffect, useRef } from "react";
+  3 |
+> 4 | xport function CrosshairCursor() {
+    |       ^^^^^^^^
+  5 |   const cursor = useRef<HTMLDivElement>(null);
+  6 |   const [hovered, setHovered] = useState(false);
+  7 |
+
+Expected ';', '}' or <eof>
+
+Import traces:
+  Server Component:
+    ./src/components/CustomCursor.tsx
+    ./src/app/layout.tsx
+
+  Client Component Browser:
+    ./src/components/CustomCursor.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/CustomCursor.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+[01:29:29.394] Server  LOG     ✓ Compiled in 166ms
+[01:29:30.147] Browser ERROR   ./src/app/page.tsx:19:1
+Export CustomCursor doesn't exist in target module
+  17 | import { motion, AnimatePresence } from "framer-motion";
+  18 | import ScrollToLink from "@/components/ScrollToLink";
+> 19 | import { CustomCursor } from "@/components/CustomCursor";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  20 |
+  21 | /* ─── FadeSection ───────────────────────────────────────── */
+  22 | function FadeSection({
+
+The export CustomCursor was not found in module [project]/src/components/CustomCursor.tsx [app-client] (ecmascript).
+Did you mean to import CrosshairCursor?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+[01:29:30.147] Browser ERROR   ./src/app/page.tsx:19:1
+Export CustomCursor doesn't exist in target module
+  17 | import { motion, AnimatePresence } from "framer-motion";
+  18 | import ScrollToLink from "@/components/ScrollToLink";
+> 19 | import { CustomCursor } from "@/components/CustomCursor";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  20 |
+  21 | /* ─── FadeSection ───────────────────────────────────────── */
+  22 | function FadeSection({
+
+The export CustomCursor was not found in module [project]/src/components/CustomCursor.tsx [app-ssr] (ecmascript).
+Did you mean to import CrosshairCursor?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+[01:29:30.147] Browser ERROR   ./src/app/page.tsx:19:1
+Export CustomCursor doesn't exist in target module
+  17 | import { motion, AnimatePresence } from "framer-motion";
+  18 | import ScrollToLink from "@/components/ScrollToLink";
+> 19 | import { CustomCursor } from "@/components/CustomCursor";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  20 |
+  21 | /* ─── FadeSection ───────────────────────────────────────── */
+  22 | function FadeSection({
+
+The export CustomCursor was not found in module [project]/src/components/CustomCursor.tsx [app-client] (ecmascript).
+Did you mean to import CrosshairCursor?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+[01:29:30.147] Browser ERROR   ./src/app/page.tsx:19:1
+Export CustomCursor doesn't exist in target module
+  17 | import { motion, AnimatePresence } from "framer-motion";
+  18 | import ScrollToLink from "@/components/ScrollToLink";
+> 19 | import { CustomCursor } from "@/components/CustomCursor";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  20 |
+  21 | /* ─── FadeSection ───────────────────────────────────────── */
+  22 | function FadeSection({
+
+The export CustomCursor was not found in module [project]/src/components/CustomCursor.tsx [app-ssr] (ecmascript).
+Did you mean to import CrosshairCursor?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+[01:29:39.134] Browser ERROR   ./src/app/page.tsx:19:1
+Export CustomCursor doesn't exist in target module
+  17 | import { motion, AnimatePresence } from "framer-motion";
+  18 | import ScrollToLink from "@/components/ScrollToLink";
+> 19 | import { CustomCursor } from "@/components/CustomCursor";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  20 |
+  21 | /* ─── FadeSection ───────────────────────────────────────── */
+  22 | function FadeSection({
+
+The export CustomCursor was not found in module [project]/src/components/CustomCursor.tsx [app-client] (ecmascript).
+Did you mean to import CrosshairCursor?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+[01:29:39.134] Browser ERROR   ./src/app/page.tsx:19:1
+Export CustomCursor doesn't exist in target module
+  17 | import { motion, AnimatePresence } from "framer-motion";
+  18 | import ScrollToLink from "@/components/ScrollToLink";
+> 19 | import { CustomCursor } from "@/components/CustomCursor";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  20 |
+  21 | /* ─── FadeSection ───────────────────────────────────────── */
+  22 | function FadeSection({
+
+The export CustomCursor was not found in module [project]/src/components/CustomCursor.tsx [app-ssr] (ecmascript).
+Did you mean to import CrosshairCursor?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+[01:29:39.135] Browser ERROR   ./src/app/page.tsx:19:1
+Export CustomCursor doesn't exist in target module
+  17 | import { motion, AnimatePresence } from "framer-motion";
+  18 | import ScrollToLink from "@/components/ScrollToLink";
+> 19 | import { CustomCursor } from "@/components/CustomCursor";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  20 |
+  21 | /* ─── FadeSection ───────────────────────────────────────── */
+  22 | function FadeSection({
+
+The export CustomCursor was not found in module [project]/src/components/CustomCursor.tsx [app-client] (ecmascript).
+Did you mean to import CrosshairCursor?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+[01:29:39.135] Browser ERROR   ./src/app/page.tsx:19:1
+Export CustomCursor doesn't exist in target module
+  17 | import { motion, AnimatePresence } from "framer-motion";
+  18 | import ScrollToLink from "@/components/ScrollToLink";
+> 19 | import { CustomCursor } from "@/components/CustomCursor";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  20 |
+  21 | /* ─── FadeSection ───────────────────────────────────────── */
+  22 | function FadeSection({
+
+The export CustomCursor was not found in module [project]/src/components/CustomCursor.tsx [app-ssr] (ecmascript).
+Did you mean to import CrosshairCursor?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+[01:29:40.968] Server  LOG     ✓ Compiled in 572ms
+[01:29:41.221] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./src/components/CustomCursor.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[01:29:41.222] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./src/components/CustomCursor.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[01:29:41.867] Server  ERROR   ⨯ Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+[01:29:42.170] Server  ERROR   ⨯ Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+[01:29:42.191] Browser ERROR   uncaughtError: Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+
+Check the render method of `RootLayout`.
+[01:29:42.716] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:29:42.821] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:29:43.133] Browser ERROR   uncaughtError: Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+
+Check the render method of `RootLayout`.
+[01:29:43.133] Browser ERROR   uncaughtError: Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+
+Check the render method of `RootLayout`.
+[01:29:47.284] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:29:47.284] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:29:47.289] Server  LOG     ✓ Compiled in 451ms
+[01:29:47.780] Server  ERROR   ⨯ Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+[01:29:48.044] Server  ERROR   ⨯ Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+[01:29:48.171] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:29:48.379] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:29:49.134] Browser ERROR   uncaughtError: Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+
+Check the render method of `RootLayout`.
+[01:29:49.134] Browser ERROR   uncaughtError: Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+
+Check the render method of `RootLayout`.
+[01:29:52.500] Server  ERROR   ⨯ Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+[01:29:52.661] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:29:52.662] Browser ERROR   uncaughtError: Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+
+Check the render method of `RootLayout`.
+[01:30:05.344] Server  LOG     ✓ Compiled in 39ms
+[01:30:05.754] Server  ERROR   ⨯ Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+[01:30:06.018] Server  ERROR   ⨯ Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+[01:30:06.232] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:30:06.352] Browser ERROR   uncaughtError: Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+
+Check the render method of `RootLayout`.
+[01:30:06.518] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:30:07.134] Browser ERROR   uncaughtError: Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+
+Check the render method of `RootLayout`.
+[01:30:07.461] Server  ERROR   ⨯ ReferenceError: CustomCursor is not defined
+[01:30:07.671] Server  ERROR   ⨯ ReferenceError: CustomCursor is not defined
+[01:30:07.850] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:30:07.929] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:30:07.990] Browser ERROR   uncaughtError: ReferenceError: CustomCursor is not defined
+[01:30:08.131] Browser ERROR   uncaughtError: ReferenceError: CustomCursor is not defined
+[01:30:23.687] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:30:23.693] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:30:23.719] Server  LOG     ✓ Compiled in 100ms
+[01:30:24.419] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:30:24.541] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:30:25.168] Browser WARN    Image with src "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&q=85" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:30:25.168] Browser WARN    Image with src "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&q=85" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:30:26.134] Browser WARN    Image with src "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&q=85" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:30:26.134] Browser WARN    Image with src "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&q=85" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:30:26.134] Browser WARN    Image with src "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=700&q=80" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:30:26.134] Browser WARN    Image with src "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=700&q=80" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[01:30:26.134] Browser WARN    Image with src "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=700&q=80" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:30:26.134] Browser WARN    Image with src "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=700&q=80" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[01:30:26.134] Browser WARN    Image with src "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=700&q=80" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:30:26.134] Browser WARN    Image with src "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=700&q=80" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[01:30:26.134] Browser WARN    Image with src "https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&q=80" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:30:26.134] Browser WARN    Image with src "https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&q=80" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[01:30:26.134] Browser WARN    Image with src "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=774&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:30:26.134] Browser WARN    Image with src "https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=774&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:30:26.134] Browser WARN    Image with src "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1740&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:30:33.418] Browser WARN    Image with src "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=700&q=80" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:30:33.418] Browser WARN    Image with src "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=700&q=80" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[01:30:33.594] Browser WARN    Image with src "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=700&q=80" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:30:33.594] Browser WARN    Image with src "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=700&q=80" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[01:31:08.761] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./src/components/CustomCursor.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[01:31:08.761] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./src/components/CustomCursor.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[01:31:09.231] Server  ERROR   ⨯ Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+[01:31:09.549] Server  ERROR   ⨯ Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+[01:31:10.554] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:31:10.563] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:31:11.134] Browser ERROR   uncaughtError: Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+
+Check the render method of `RootLayout`.
+[01:31:11.136] Browser ERROR   uncaughtError: Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+
+Check the render method of `RootLayout`.
+[01:31:24.737] Server  LOG     ✓ Compiled in 68ms
+[01:31:25.480] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:31:25.671] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:31:27.132] Browser WARN    Image with src "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&q=85" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:31:27.132] Browser WARN    Image with src "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&q=85" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:31:27.132] Browser WARN    Image with src "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=700&q=80" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:31:27.132] Browser WARN    Image with src "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=700&q=80" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[01:31:27.132] Browser WARN    Image with src "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=700&q=80" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:31:27.132] Browser WARN    Image with src "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=700&q=80" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[01:31:27.132] Browser WARN    Image with src "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=700&q=80" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:31:27.132] Browser WARN    Image with src "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=700&q=80" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[01:31:27.132] Browser WARN    Image with src "https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&q=80" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:31:27.132] Browser WARN    Image with src "https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&q=80" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[01:31:27.132] Browser WARN    Image with src "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=774&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:31:27.132] Browser WARN    Image with src "https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=774&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:31:27.132] Browser WARN    Image with src "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1740&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:31:27.133] Browser WARN    Image with src "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&q=85" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:31:27.133] Browser WARN    Image with src "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&q=85" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:31:27.133] Browser WARN    Image with src "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=700&q=80" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:31:27.133] Browser WARN    Image with src "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=700&q=80" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[01:31:27.133] Browser WARN    Image with src "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=700&q=80" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:31:27.133] Browser WARN    Image with src "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=700&q=80" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[01:31:27.133] Browser WARN    Image with src "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=700&q=80" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:31:27.133] Browser WARN    Image with src "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=700&q=80" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[01:31:27.133] Browser WARN    Image with src "https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&q=80" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:31:27.133] Browser WARN    Image with src "https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&q=80" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[01:31:27.133] Browser WARN    Image with src "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=774&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:31:27.133] Browser WARN    Image with src "https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=774&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:31:27.133] Browser WARN    Image with src "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1740&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:32:24.465] Server  LOG     ✓ Compiled in 37ms
+[01:32:25.133] Browser ERROR   uncaughtError: Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+
+Check the render method of `RootLayout`.
+[01:32:25.133] Browser ERROR   uncaughtError: Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+
+Check the render method of `RootLayout`.
+[01:32:28.410] Server  ERROR   ⨯ Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+[01:32:28.537] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:32:28.537] Browser ERROR   uncaughtError: Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+
+Check the render method of `RootLayout`.
+[01:32:33.756] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:32:33.759] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:32:33.759] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./src/components/CustomCursor.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[01:32:33.759] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:32:33.784] Server  LOG     ✓ Compiled in 109ms
+[01:32:34.007] Browser ERROR   unhandledRejection: Error: No link element found for chunk /_next/static/chunks/%5Broot-of-the-server%5D__712c48d4._.css
+[01:32:34.248] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:32:34.887] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:32:35.222] Browser WARN    Image with src "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&q=85" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:32:35.222] Browser WARN    Image with src "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&q=85" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:32:36.131] Browser WARN    Image with src "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&q=85" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:32:36.131] Browser WARN    Image with src "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&q=85" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:32:36.131] Browser WARN    Image with src "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=700&q=80" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:32:36.131] Browser WARN    Image with src "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=700&q=80" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[01:32:36.131] Browser WARN    Image with src "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=700&q=80" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:32:36.131] Browser WARN    Image with src "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=700&q=80" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[01:32:36.131] Browser WARN    Image with src "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=700&q=80" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:32:36.131] Browser WARN    Image with src "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=700&q=80" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[01:32:36.131] Browser WARN    Image with src "https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&q=80" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:32:36.131] Browser WARN    Image with src "https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&q=80" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[01:32:36.131] Browser WARN    Image with src "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=774&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:32:36.131] Browser WARN    Image with src "https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=774&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:32:36.131] Browser WARN    Image with src "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1740&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:32:44.224] Browser WARN    Image with src "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=700&q=80" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:32:44.224] Browser WARN    Image with src "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=700&q=80" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[01:32:44.224] Browser WARN    Image with src "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=700&q=80" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:32:44.224] Browser WARN    Image with src "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=700&q=80" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[01:32:44.224] Browser WARN    Image with src "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=700&q=80" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:32:44.224] Browser WARN    Image with src "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=700&q=80" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[01:32:44.224] Browser WARN    Image with src "https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&q=80" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:32:44.224] Browser WARN    Image with src "https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&q=80" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[01:32:44.754] Browser WARN    Image with src "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=774&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:32:45.045] Browser WARN    Image with src "https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=774&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:32:59.525] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./src/components/CustomCursor.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[01:32:59.534] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./src/components/CustomCursor.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[01:33:00.085] Server  ERROR   ⨯ Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+[01:33:00.362] Server  ERROR   ⨯ Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+[01:33:00.568] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:33:00.969] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:33:01.132] Browser ERROR   uncaughtError: Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+
+Check the render method of `RootLayout`.
+[01:33:01.151] Browser ERROR   uncaughtError: Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+
+Check the render method of `RootLayout`.
+[01:33:07.755] Server  LOG     ✓ Compiled in 36ms
+[01:33:08.251] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:33:08.273] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:33:10.306] Browser WARN    Image with src "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&q=85" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:33:10.307] Browser WARN    Image with src "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&q=85" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:33:10.307] Browser WARN    Image with src "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=700&q=80" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:33:10.307] Browser WARN    Image with src "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=700&q=80" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[01:33:10.307] Browser WARN    Image with src "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=700&q=80" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:33:10.307] Browser WARN    Image with src "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=700&q=80" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[01:33:10.307] Browser WARN    Image with src "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=700&q=80" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:33:10.307] Browser WARN    Image with src "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=700&q=80" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[01:33:10.307] Browser WARN    Image with src "https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&q=80" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:33:10.307] Browser WARN    Image with src "https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&q=80" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[01:33:10.307] Browser WARN    Image with src "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=774&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:33:10.307] Browser WARN    Image with src "https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=774&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:33:10.307] Browser WARN    Image with src "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1740&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:33:11.136] Browser WARN    Image with src "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&q=85" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:33:11.136] Browser WARN    Image with src "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&q=85" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:33:11.136] Browser WARN    Image with src "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=700&q=80" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:33:11.136] Browser WARN    Image with src "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=700&q=80" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[01:33:11.136] Browser WARN    Image with src "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=700&q=80" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:33:11.136] Browser WARN    Image with src "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=700&q=80" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[01:33:11.136] Browser WARN    Image with src "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=700&q=80" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:33:11.136] Browser WARN    Image with src "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=700&q=80" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[01:33:11.136] Browser WARN    Image with src "https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&q=80" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:33:11.136] Browser WARN    Image with src "https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&q=80" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[01:33:11.136] Browser WARN    Image with src "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=774&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:33:11.136] Browser WARN    Image with src "https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=774&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:33:11.136] Browser WARN    Image with src "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1740&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:34:03.868] Server  LOG     ✓ Compiled in 132ms
