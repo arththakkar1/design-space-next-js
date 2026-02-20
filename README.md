@@ -25,27 +25,13 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ---
 
-## Project Structure
-
-```
-app/
-  page.tsx          # All page sections
-  globals.css       # Font imports, Tailwind directives
-tailwind.config.ts  # Custom colors and font families
-cursors.tsx         # Three interchangeable cursor components
-```
-
----
-
 ## Cursors
 
 Three cursor options in `cursors.tsx`. Swap by replacing `<CustomCursor />` in the page root.
 
-| Component          | Behavior                                             |
-| ------------------ | ---------------------------------------------------- |
-| `CrosshairCursor`  | Crosshair that rotates 45deg on interactive elements |
-| `BlobCursor`       | Velocity-aware morphing blob with eased lag          |
-| `TextRevealCursor` | Expanding ring that reveals element label on hover   |
+| Component         | Behavior                                             |
+| ----------------- | ---------------------------------------------------- |
+| `CrosshairCursor` | Crosshair that rotates 45deg on interactive elements |
 
 ---
 
