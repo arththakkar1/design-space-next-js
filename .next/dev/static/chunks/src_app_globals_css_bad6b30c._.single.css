@@ -386,8 +386,16 @@
     top: calc(var(--spacing) * 10);
   }
 
+  .-right-1 {
+    right: calc(var(--spacing) * -1);
+  }
+
   .-right-6 {
     right: calc(var(--spacing) * -6);
+  }
+
+  .-right-30 {
+    right: calc(var(--spacing) * -30);
   }
 
   .right-0 {
@@ -410,8 +418,20 @@
     bottom: calc(var(--spacing) * 16);
   }
 
+  .-left-1 {
+    left: calc(var(--spacing) * -1);
+  }
+
+  .-left-5 {
+    left: calc(var(--spacing) * -5);
+  }
+
   .-left-10 {
     left: calc(var(--spacing) * -10);
+  }
+
+  .-left-30 {
+    left: calc(var(--spacing) * -30);
   }
 
   .left-0 {
@@ -803,8 +823,16 @@
     object-fit: cover;
   }
 
+  .p-1 {
+    padding: calc(var(--spacing) * 1);
+  }
+
   .p-7 {
     padding: calc(var(--spacing) * 7);
+  }
+
+  .px-1 {
+    padding-inline: calc(var(--spacing) * 1);
   }
 
   .px-4 {
@@ -813,6 +841,10 @@
 
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
+  }
+
+  .px-7 {
+    padding-inline: calc(var(--spacing) * 7);
   }
 
   .px-9 {
@@ -849,6 +881,10 @@
 
   .py-5 {
     padding-block: calc(var(--spacing) * 5);
+  }
+
+  .py-7 {
+    padding-block: calc(var(--spacing) * 7);
   }
 
   .py-8 {

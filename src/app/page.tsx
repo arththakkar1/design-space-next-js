@@ -321,38 +321,6 @@ function Hero() {
           }}
         />
 
-        {/* Floating card */}
-        <div
-          className="absolute bottom-16 -left-10 p-7 shadow-2xl animate-float"
-          style={{ background: "var(--warm-white)", minWidth: 200 }}
-        >
-          <p
-            className="font-display font-light"
-            style={{ fontSize: "3rem", color: "var(--gold)", lineHeight: 1 }}
-          >
-            12
-          </p>
-          <p
-            className="font-body text-xs tracking-[0.22em] uppercase mt-1"
-            style={{ color: "var(--stone)" }}
-          >
-            Design Awards
-          </p>
-        </div>
-
-        {/* Corner label */}
-        <div
-          className="absolute top-10 right-10 font-body text-xs tracking-[0.25em] uppercase px-4 py-2"
-          style={{
-            background: "rgba(201,169,110,0.18)",
-            backdropFilter: "blur(10px)",
-            color: "var(--gold)",
-            border: "1px solid rgba(201,169,110,0.3)",
-          }}
-        >
-          Est. 2010
-        </div>
-
         {/* Scroll hint */}
         <div className="absolute bottom-10 right-10 flex flex-col items-center gap-3">
           <div
@@ -780,21 +748,21 @@ const testimonials = [
       "DesignSpace transformed our penthouse into a modern masterpiece. Their attention to detail and choice of materials were impeccable.",
     name: "Alexandra Sterling",
     role: "CEO, TechFlow",
-    img: "https://images.unsplash.com/photo-1494790108755-2616b612b47c?w=200&q=80",
+    img: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     quote:
       "The transition from old to new was so smooth. Their project management is top-tier. I couldn't be happier with my new minimalist kitchen.",
     name: "James Harrington",
     role: "Architect",
-    img: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&q=80",
+    img: "https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     quote:
       "Every corner of our home now tells a story. The expert designers really listened to what we wanted and exceeded expectations.",
     name: "Elena Rodriguez",
     role: "Art Curator",
-    img: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=80",
+    img: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
 ];
 
