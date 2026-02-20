@@ -4,6 +4,8 @@ import "./globals.css";
 
 import LenisProvider from "./lenis";
 import { CrosshairCursor } from "@/components/CustomCursor";
+import { Nav } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -25,7 +27,11 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${manrope.className} antialiased`}>
         <CrosshairCursor />
-        <LenisProvider>{children}</LenisProvider>
+        <LenisProvider>
+          <Nav />
+          {children}
+          <Footer />
+        </LenisProvider>
       </body>
     </html>
   );
